@@ -4,7 +4,7 @@
         return isset($_GET[$name]) ? (string) $_GET[$name] : null;
     }
 
-    function writeDataToFile($nameFile, ?string $name, ?string $strName)
+    function userDataCorrect($nameFile, ?string $name, ?string $strName)
     {
         if ($name != null)
         {
@@ -35,7 +35,7 @@
     $lastNameUser = $queries['last_name'];
     $ageUser = $queries['age'];
 
-    writeDataToFile($fileSource, $firstNameUser, 'firstNameUser');
-    writeDataToFile($fileSource, $lastNameUser, 'lastNameUser');
-    writeDataToFile($fileSource, $emailUser, 'emailUser');
-    writeDataToFile($fileSource, $ageUser, 'ageUser');
+    userDataCorrect($fileSource, $firstNameUser, 'firstNameUser');
+    userDataCorrect($fileSource, $lastNameUser, 'lastNameUser');
+    userDataCorrect($fileSource, $emailUser, 'emailUser');
+    userDataCorrect($fileSource, $ageUser, 'ageUser');
