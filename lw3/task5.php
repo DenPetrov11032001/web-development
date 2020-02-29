@@ -8,7 +8,8 @@
     $fileStr = file_get_contents('data/den.txt');
     $fileDataArray = array();
     $arrayPairs = explode(';', $fileStr);
-    foreach($arrayPairs as $str) {
+    foreach($arrayPairs as $str) 
+    {
         list($key, $value) = explode('=>', $str);
         $fileDataArray[$key] = $value;
     }
@@ -18,9 +19,9 @@
     $emailUser = $fileDataArray['email'];
     $ageUser = $fileDataArray['age'];
 
-    echo "Fitst Name: ".$firstNameUser."<BR>";
-    echo "Last Name: ".$lastNameUser."<BR>";
-    echo "Email: ".$emailUser."<BR>";
-    echo "Age: ".$ageUser."<BR>";
+    echo "Fitst Name: " . $firstNameUser . "\n";
+    echo "Last Name: " . $lastNameUser . "\n";
+    echo "Email: " . $emailUser . "\n";
+    echo "Age: " . $ageUser . "\n";
     
     fclose($fileSource);
