@@ -4,17 +4,23 @@
         return isset($_GET[$name]) ? (string) $_GET[$name] : null;
     }
 
-    $fileSource = fopen('data/den11032001.txt', 'r');
-    $fileStr = file_get_contents ('data/den11032001.txt');
-    $fileDataArray = explode("\n", $fileStr);
-    
-    $firstNameUser = $fileDataArray[0];
-    $lastNameUser = $fileDataArray[1];
-    $emailUser = $fileDataArray[2];
-    $ageUser = $fileDataArray[3];
+    $fileSource = fopen('data/den.txt', 'r');
+    $fileStr = file_get_contents('data/den.txt');
+    $fileDataArray = array();
+    $arrayPairs = explode(';', $fileStr);
+    foreach($arrayPairs as $str) {
+        list($key, $value) = explode('=>', $str);
+        $fileDataArray[$key] = $value;
+    }
+
+    $firstNameUser = $fileDataArray['first_name'];
+    $lastNameUser = $fileDataArray['last_name'];
+    $emailUser = $fileDataArray['email'];
+    $ageUser = $fileDataArray['age'];
 
     echo "Fitst Name: ".$firstNameUser."<BR>";
     echo "Last Name: ".$lastNameUser."<BR>";
     echo "Email: ".$emailUser."<BR>";
     echo "Age: ".$ageUser."<BR>";
+    
     fclose($fileSource);

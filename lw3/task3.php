@@ -19,13 +19,15 @@
         $security += 2*($lenQuery - $charsInLowCase);    
     }
     // ex all low or up
-    if ((($charsInUpCase != 0 ) && ($charsInLowCase == 0)) || (($charsInUpCase == 0 ) && ($charsInLowCase != 0))){
+    if ((($charsInUpCase != 0 ) && ($charsInLowCase == 0)) || (($charsInUpCase == 0 ) && ($charsInLowCase != 0)))
+    {
         $security = 0;
     }
     // repeat chars
     $countRepeatChars = 0;
     $result = count_chars($query, 0);
-    for ($i=0; $i < count($result); $i++) {
+    for ($i=0; $i < count($result); $i++)
+    {
         if (($result[$i] != 0) && ($result[$i] != 1))
             $countRepeatChars += $result[$i];
     }
