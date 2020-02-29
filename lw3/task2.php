@@ -6,9 +6,10 @@
     
     $query = getGETParameter('identifier');
     $firstSymbol = substr($query, 0, 1);
-    if (preg_grep("/(1|2|3|4|5|6|7|8|9|0|#|@|'|&|%|!|<|>|\|;|:|,)/i", array($firstSymbol)) || $query == null){
-        echo "No - the query string isn't an indifier";
+    if (preg_grep("/^[a-zA-Z]+[a-zA-Z0-9]*$/", array($firstSymbol)) || $query !== null)
+    {
+        echo "Yes - the query string is an indifier";
     }
     else{
-        echo "Yes - the query string is an indifier";
+        echo "No - the query string isn't an indifier";
     }

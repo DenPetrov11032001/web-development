@@ -4,19 +4,38 @@
         return isset($_GET[$name]) ? (string) $_GET[$name] : null;
     }
 
-    $emailUser = getGETParameter('email');
-        
-    $dir = 'data/'; 
-    if (!file_exists($dir.$emailUser)){ 
-        $fileSource = fopen($dir.$emailUser.'.txt', 'w+'); 
+    function writeDataToFile($nameFile, ?string $name, ?string $strName)
+    {
+        if ($name != null)
+        {
+            echo $strName . " : {$name}" . "<BR>";
+        }
+        else
+        {
+            echo "Not correct $strName. <BR>";
+        }
     }
 
-    $firstNameUser = getGETParameter('first_name');
-    $lastNameuser = getGETParameter('last_name');
-    $ageUser = getGETParameter('age');
-    if ($firstNameUser != null) fwrite($fileSource, $firstNameUser.PHP_EOL);
-    if ($lastNameuser != null) fwrite($fileSource, $lastNameuser.PHP_EOL);
-    fwrite($fileSource, $emailUser.PHP_EOL);
-    if ($ageUser != null) fwrite($fileSource, $ageUser.PHP_EOL);
+    $emailUser = getGETParameter('email');  
+    $dir = 'data/';
+    $fileName = $dir . $emailUser . '.txt'; 
+    if (!file_exists($dir.$emailUser)){ 
+        $fileSource = fopen($dir.$emailUser . '.txt', 'w+'); 
+    }
 
-    fclose($fileSource);
+    $queries = array();
+    parse_str($_SERVER['QUERY_STRING'], $queries);
+
+    foreach ($queries as $key => $value) 
+    {
+        file_put_contents($fileName, "{$key}=>{$value};", FILE_APPEND);
+    }
+
+    $firstNameUser = $queries['first_name'];
+    $lastNameUser = $queries['last_name'];
+    $ageUser = $queries['age'];
+
+    writeDataToFile($fileSource, $firstNameUser, 'firstNameUser');
+    writeDataToFile($fileSource, $lastNameUser, 'lastNameUser');
+    writeDataToFile($fileSource, $emailUser, 'emailUser');
+    writeDataToFile($fileSource, $ageUser, 'ageUser');
