@@ -1,27 +1,27 @@
 <?php 
     function getGETParameter(string $name): ?string
     {
-        return isset($_GET[$name]) ? (string) $_GET[$name] : null;
+        return isset($_GET[$name]) ? (string)$_GET[$name] : null;
     }
 
     function userDataCorrect($nameFile, ?string $name, ?string $strName)
     {
         if ($name != null)
         {
-            echo $strName . " : {$name}" . "<BR>";
+            echo $strName . ": {$name}" . "\n";
         }
         else
         {
-            echo "Not correct $strName. <BR>";
+            echo "Not correct $strName." . "\n";
         }
     }
 
     $emailUser = getGETParameter('email');  
     $dir = 'data/';
     $fileName = $dir . $emailUser . '.txt'; 
-    if (!file_exists($dir.$emailUser))
+    if (!file_exists($dir . $emailUser))
     { 
-        $fileSource = fopen($dir.$emailUser . '.txt', 'w+'); 
+        $fileSource = fopen($fileName, 'w+'); 
     }
 
     $queries = array();
