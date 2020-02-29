@@ -19,7 +19,8 @@
     $emailUser = getGETParameter('email');  
     $dir = 'data/';
     $fileName = $dir . $emailUser . '.txt'; 
-    if (!file_exists($dir.$emailUser)){ 
+    if (!file_exists($dir.$emailUser))
+    { 
         $fileSource = fopen($dir.$emailUser . '.txt', 'w+'); 
     }
 
