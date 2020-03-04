@@ -26,15 +26,16 @@
         }
     }
 
-    function userDataPrint(?string $name, ?string $strName)
+    function userDataPrint(?string $strName)
     {
-        if ($name != null)
+        $value = getParameter("{$strName}");
+        if ($value != null)
         {
-            echo $strName . ": {$name}" . "\n";
+            echo $strName . ": {$value}" . "\n";
         }
         else
         {
-            echo "Field $strName doesn't exsist." . "\n";
+            echo "Field {$strName} doesn't exsist." . "\n";
         }
     }
 
@@ -44,13 +45,9 @@
     $dir = 'data/';
     $fileName = $dir . $emailUser . '.txt'; 
 
-    $firstNameUser = getParameter('first_name');
-    $lastNameUser = getParameter('last_name');
-    $ageUser = getParameter('age');
-
     writeDataToFile($fileName);
 
-    userDataPrint($firstNameUser, 'firstNameUser');
-    userDataPrint($lastNameUser, 'lastNameUser');
-    userDataPrint($emailUser, 'emailUser');
-    userDataPrint($ageUser, 'ageUser');
+    userDataPrint('first_name');
+    userDataPrint('last_name');
+    userDataPrint('email');
+    userDataPrint('age');

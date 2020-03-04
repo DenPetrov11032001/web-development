@@ -1,1 +1,1 @@
-first_name=>den;email=>den;last_name=>petrov;
+email=>den;last_name=>petrov;
