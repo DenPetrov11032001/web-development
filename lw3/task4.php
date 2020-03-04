@@ -7,7 +7,6 @@
     function writeDataToFile(string $fileName)
     {
         $isWriteInFile = false;
-
         foreach ($_GET as $key => $value) 
         {
             if (($key == 'first_name') || ($key == 'last_name') 
