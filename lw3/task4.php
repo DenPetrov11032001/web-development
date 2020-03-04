@@ -1,11 +1,32 @@
 <?php 
-    header("Content-Type: text/plain");
-    function getGETParameter(string $name): ?string
+    function getParameter(string $name): ?string
     {
         return isset($_GET[$name]) ? (string)$_GET[$name] : null;
     }
 
-    function userDataCorrect($nameFile, ?string $name, ?string $strName)
+    function writeDataToFile(string $fileName)
+    {
+        $isWriteInFile = false;
+
+        foreach ($_GET as $key => $value) 
+        {
+            if (($key == 'first_name') || ($key == 'last_name') 
+            || ($key == 'email') || ($key == 'age')) 
+            {
+                if (!$isWriteInFile)
+                {
+                    file_put_contents($fileName, "{$key}=>{$value};"); 
+                    $isWriteInFile = true;   
+                }
+                else
+                {
+                    file_put_contents($fileName, "{$key}=>{$value};", FILE_APPEND);    
+                }
+            }
+        }
+    }
+
+    function userDataPrint(?string $name, ?string $strName)
     {
         if ($name != null)
         {
@@ -13,31 +34,23 @@
         }
         else
         {
-            echo "Not correct $strName." . "\n";
+            echo "Field $strName doesn't exsist." . "\n";
         }
     }
 
-    $emailUser = getGETParameter('email');  
+    header("Content-Type: text/plain");
+
+    $emailUser = getParameter('email'); 
     $dir = 'data/';
     $fileName = $dir . $emailUser . '.txt'; 
-    if (!file_exists($dir . $emailUser))
-    { 
-        $fileSource = fopen($fileName, 'w+'); 
-    }
 
-    $queries = array();
-    parse_str($_SERVER['QUERY_STRING'], $queries);
+    $firstNameUser = getParameter('first_name');
+    $lastNameUser = getParameter('last_name');
+    $ageUser = getParameter('age');
 
-    foreach ($queries as $key => $value) 
-    {
-        file_put_contents($fileName, "{$key}=>{$value};", FILE_APPEND);
-    }
+    writeDataToFile($fileName);
 
-    $firstNameUser = $queries['first_name'];
-    $lastNameUser = $queries['last_name'];
-    $ageUser = $queries['age'];
-
-    userDataCorrect($fileSource, $firstNameUser, 'firstNameUser');
-    userDataCorrect($fileSource, $lastNameUser, 'lastNameUser');
-    userDataCorrect($fileSource, $emailUser, 'emailUser');
-    userDataCorrect($fileSource, $ageUser, 'ageUser');
+    userDataPrint($firstNameUser, 'firstNameUser');
+    userDataPrint($lastNameUser, 'lastNameUser');
+    userDataPrint($emailUser, 'emailUser');
+    userDataPrint($ageUser, 'ageUser');
