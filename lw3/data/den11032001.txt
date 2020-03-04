@@ -1,4 +1,1 @@
-den
-petrov
-den11032001
-19
+email=>den11032001;first_name=>denis;last_name=>petrov;age=>18,5;
