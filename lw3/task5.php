@@ -1,4 +1,9 @@
 <?php 
+    function getParameter(string $name): ?string
+    {
+        return isset($_GET[$name]) ? (string)$_GET[$name] : null;
+    }
+
     function getDataFromFile(string $fileName): array
     {
         $fileStr = file_get_contents($fileName);
@@ -27,5 +32,6 @@
 
     header("Content-Type: text/plain");
 
-    $fileDataArray = getDataFromFile('data/den.txt');
+    $emailUser = $_GET['email'];
+    $fileDataArray = getDataFromFile('data/' . $emailUser . '.txt');
     printData($fileDataArray);
