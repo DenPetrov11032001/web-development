@@ -39,6 +39,10 @@ body
 {
     letter-spacing: 0.55px;
     font-size: 24px;
+}
+.topic-photo {
+    font-size: 25px;
+
     line-height: 32px;
     color: #15a98c;
     font-family: "Open Sans";
@@ -67,6 +71,10 @@ li, ol
     float: left;
     height: 300px;
     width: 570px;
+.container-quote {
+    margin: 50px 0px 0px 0px;
+    float: left;
+    width: 560px;
 }
 .points 
 {
@@ -76,6 +84,12 @@ li, ol
 blockquote 
 {
     margin: -13px 60px 25px 61px;
+blockquote {
+    margin: -15px 66px 25px 60px;
+    color: rgb(156, 156, 156);
+}
+blockquote.dline {
+    width: 560px;
     font-size: 28px;
     line-height: 42px;
     color: #848484;
@@ -99,8 +113,21 @@ blockquote.dline
 }
 .container-text 
 {
+}
+.who {
+    margin: -27px 66px 100px 62px;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    color: #333333;
+    font-family: "Open Sans";
+}
+.container-text {
     margin: 45px 0px 0px 0px;
     float: left;
+    width: 560px;
 }
 h1 
 {
@@ -151,6 +178,38 @@ h1
 
     font-size: 36px;
     line-height: 41px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+    font-size: 48px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #333333;
+    font-family: "Open Sans";
+}
+.line {
+    width: 60px;
+    height: 6px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #45c3aa;
+}
+.story-first {
+    margin-top: 80px;
+}
+.story {
+    margin-bottom: 41px;
+
+    line-height: 32px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-size: 19px;
+    color: #555555;
+}
+.hobby {
+    margin-bottom: -3px;
+    margin-left: -3px;
+    font-size: 36px;
+    line-height: 42px;
     color: #333333;
     font-family: "Open Sans";
     font-weight: 400;
@@ -169,5 +228,13 @@ h1
 }
 .last 
 {
+    width: 562px;
+    height: 263px;
+    font-size: 19px;
+    line-height: 32px;
+    color: #15a98b;
+    font-family: "Georgia";
+}
+.spec-symbol {
     color: rgb(0, 143, 168);
 }
