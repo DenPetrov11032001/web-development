@@ -1,108 +1,173 @@
-body {
-    margin-left: 1px;
+body 
+{
+    margin-left: 0px;
 }
-.container-main {
-    margin: 100px 460px 0px 460px;
-    height: 350px;
+.container-self 
+{
+    margin: 0 auto;
+    margin-top: 90px !important;
+    width: 960px;
+    height: 350px !important;
 }
-.container-topic {
-    margin: 0px 60px 50px 20px;
+.container-topic 
+{
+    margin: 0px 60px -6px 0px;
     float: left;
 }
-.photo {
+.photo 
+{
     width: 330px;
     height: 350px;
 }
-.topic-photo {
-    margin-top: 50px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 25px;
-    line-height: 30px;
-    color: rgb(0, 143, 168);
+.topic 
+{
+    width: 326px;
+    margin-right: 60px;
+    margin-left: 4px;
 }
-.list {
-    padding-left: 20px !important;
-    padding-bottom: 40px;
-    line-height: 25px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
+.clear-html 
+{
+    clear: both;
 }
-li, ol {
+.container-main 
+{
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+.topic-photo 
+{
+    letter-spacing: 0.55px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #15a98c;
+    font-family: "Open Sans";
+    font-weight: 600;
+
+    margin-top: 47px;
+    margin-bottom: 10px;
+}
+.list 
+{
+    padding-left: 21px !important;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 20px;
+    color: #555555;
+    font-family: "Georgia";
+}
+li, ol 
+{
     margin-bottom: 0.7em;
 }
-.container-quote {
-    margin: 50px 22px 0px 0px;
+.container-quote 
+{
+    margin: 50px 0px 0px 0px;
     float: left;
     height: 300px;
+    width: 570px;
 }
-.points {
+.points 
+{
     width: 65px;
     height: 80px;  
 }
-blockquote {
-    margin: 0px 66px 25px 60px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 25px;
-
-    color: rgb(156, 156, 156);
+blockquote 
+{
+    margin: -13px 60px 25px 61px;
+    font-size: 28px;
+    line-height: 42px;
+    color: #848484;
+    font-family: "Georgia";
+    font-style: italic;
 }
-blockquote.dline {
+blockquote.dline 
+{
     line-height: 1.5;
 }
-.who {
-    margin: 0px 66px 120px 60px;
-    font-family: 'Roboto';
-    font-size: 25px; 
+.who 
+{
+    margin: -24px 66px 120px 65px;
+    letter-spacing: 0.3px;
+    font-family: "Open Sans"; 
+    font-size: 16px;
+    line-height: 42px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 600;
 }
-.container-text {
-    margin: 45px 22px 0px 0px;
+.container-text 
+{
+    margin: 45px 0px 0px 0px;
     float: left;
 }
-h1 {
+h1 
+{
+    margin-left: 8px;
     margin-top: auto;
+    letter-spacing: 2.5px;
     margin-bottom: 10px;
-    font-size: 60px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-size: 46px;
+    line-height: 42px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 700 !important;
 }
-.line {
+.line 
+{
+    display: flex;
+    margin-left: 1px;
+    margin-top: 31px;
     width: 60px;
-    position: absolute;
-    height: 4px;
-    background-color: rgb(0, 143, 168);
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
 }
-.story-first {
-    margin-top: 70px;
+.story-first 
+{
+    margin-top: 44px;
+    margin-left: 2px;
 }
-.story {
-    margin-bottom: 55px;
+.story-second 
+{
+    margin-left: 2px;
+    margin-top: 18px;
+
+}
+.story 
+{
+    margin-bottom: 40px;
 
     line-height: 1.7;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(83, 83, 83);
+    font-size: 19px;
+    line-height: 32px;
+    color: #555555;
+    font-family: "Georgia";
 }
-.hobby {
-    margin-bottom: 30px;
+.hobby 
+{
+    margin-bottom: 15px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-size: 36px;
-    color: rgb(0, 0, 0);
+    line-height: 41px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 400;
 }
-.write-me {
+.write-me 
+{
     padding-bottom: 135px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(0, 143, 168);
+    margin-left: 2px;
+    width: 562px;
+    height: 263px;
+    font-size: 19px;
+    line-height: 31px;
+    color: #15a98b;
+    font-family: "Georgia";
 }
-.last {
+.last 
+{
     color: rgb(0, 143, 168);
 }
