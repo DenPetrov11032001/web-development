@@ -33,7 +33,6 @@ body
     height: 50px;
     background-color: #15a98c;
     display: inline-block;
-
 }
 .header-hobby
 {
@@ -53,6 +52,7 @@ body
     clear: both;
 }
 
+
 .header-about-text
 {
     font-size: 19px;
@@ -64,12 +64,13 @@ body
 .self-background
 {
     z-index: -1;
+    display: flex;
 }
 .container-self 
 {
-    position: relative;
+    display: flex;
     margin: 0 auto;
-    margin-top: -210px !important;
+    margin-top: -190px !important;
     width: 960px;
     height: 350px !important;
     z-index: 10 !important;
@@ -220,6 +221,7 @@ h1
 }
 .hobby 
 {
+    margin-top: 45px;
     font-weight: 700;
     color: #333333;
     font-family: "Open Sans", serif;
