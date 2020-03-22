@@ -2,53 +2,55 @@ body
 {
     margin-left: auto;
 }
+
 .container-self
 {
-    margin: 0 auto;
-    margin-top: 90px !important;
+    margin: 90px auto auto 470px;
     width: 960px;
-    height: 350px !important;
+    height: 350px;
 }
+
 .container-topic
 {
     margin: 0 60px -6px 0;
     float: left;
 }
+
 .photo
 {
     width: 330px;
     height: 350px;
+    border-radius: 10px;
 }
+
 .topic
 {
     width: 326px;
     margin-right: 60px;
     margin-left: 4px;
 }
-.clear-html
-{
-    clear: both;
-}
+
 .container-main
 {
     display: flex;
     width: 960px;
-    margin: 0 auto;
+    margin: 0 auto auto 470px;
 }
+
 .topic-photo {
     font-size: 24px;
     line-height: 32px;
     color: #15a98c;
     font-family: "Open Sans", serif;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: 1px;
 
-    margin-top: 45px;
-    margin-bottom: 10px;
+    margin: 45px auto 10px -5px;
 }
+
 .list
 {
-    padding-left: 21px !important;
+    padding-left: 16px;
     padding-bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
@@ -56,49 +58,47 @@ body
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 .list-second
 {
-    padding-left: 20px !important;
+    padding-left: 20px;
     font-size: 19px;
     line-height: 22px;
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 li
 {
     margin-bottom: 0.7em;
 }
+
 .container-quote
 {
     margin: 50px 0 0 0;
     float: left;
-    width: 560px;
+    width: 570px;
 }
+
 .points
 {
     width: 65px;
     height: 80px;
 }
-blockquote
-{
-    margin: -13px 60px 25px 61px;
-}
+
 blockquote {
-    margin: -14px 66px 25px 62px;
+    margin: -12px 66px 25px 60px;
     color: rgb(156, 156, 156);
 }
+
 blockquote.dline {
-    width: 560px;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 42px;
-    color: #848484;
     font-family: "Georgia", serif;
     font-style: italic;
+    letter-spacing: 1px;
 }
-blockquote.dline
-{
-    line-height: 1.5;
-}
+
 .who {
     margin: -27px 66px 100px 64px;
     font-size: 16px;
@@ -109,23 +109,26 @@ blockquote.dline
     color: #333333;
     font-family: "Open Sans", serif;
 }
+
 .container-text {
-    margin: 45px 0 0 0;
+    margin: 45px 0 0 -2px;
     float: left;
     width: 560px;
 }
+
 h1
 {
     margin-left: 8px;
     margin-top: auto;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 10px;
     font-size: 46px;
     line-height: 42px;
     color: #333333;
     font-family: "Open Sans", serif;
-    font-weight: 700 !important;
+    font-weight: 700;
 }
+
 .line
 {
     display: flex;
@@ -136,17 +139,20 @@ h1
     border-radius: 3px;
     background-color: #45c3aa;
 }
+
 .story-first
 {
     margin-top: 44px;
     margin-left: 2px;
 }
+
 .story-second
 {
     margin-left: 2px;
     margin-top: 18px;
 
 }
+
 .story
 {
     margin-bottom: 40px;
@@ -155,8 +161,10 @@ h1
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 .hobby
 {
+    margin-top: 42px;
     margin-bottom: 20px;
     font-size: 48px;
     line-height: 42px;
@@ -164,7 +172,9 @@ h1
     color: #333333;
     font-family: "Open Sans", serif;
 }
-.line {
+
+.line
+{
     margin-top: 20px;
     width: 60px;
     height: 6px;
@@ -172,10 +182,14 @@ h1
     border-radius: 3px;
     background-color: #45c3aa;
 }
-.story-first {
+
+.story-first
+{
     margin-top: 80px;
 }
-.story {
+
+.story
+{
     margin-bottom: 41px;
 
     line-height: 32px;
@@ -184,27 +198,36 @@ h1
     font-size: 19px;
     color: #555555;
 }
-.hobby {
+
+.hobby
+{
     margin-bottom: -3px;
-    margin-left: -3px;
+    margin-left: 0;
     font-size: 36px;
     line-height: 42px;
     color: #333333;
     font-family: "Open Sans", serif;
     font-weight: 400;
 }
+
 .write-me
 {
-    padding-bottom: 135px;
-
     margin-left: 2px;
-    width: 562px;
-    height: 263px;
     font-size: 19px;
     line-height: 31px;
     color: #15a98b;
     font-family: "Georgia", serif;
+    text-decoration: none;
+    border-bottom: 1px solid #15a98b;
 }
+
+.write-me::after
+{
+    content: " →";
+    color: rgb(0, 143, 168);
+    border-bottom: 1px solid white;
+}
+
 .last
 {
     width: 562px;
@@ -214,6 +237,8 @@ h1
     color: #15a98b;
     font-family: "Georgia", serif;
 }
-.spec-symbol {
+
+.spec-symbol
+{
     color: rgb(0, 143, 168);
 }
