@@ -2,31 +2,31 @@ body
 {
     margin: auto;
 }
+
 .css-adaptive {
     max-width: 100%;
     height: auto;
 }
+
 .icon-black
 {
-    color: black !important;
-    float: left !important;
-    margin: 12px 8px 0 14px !important;
+    float: left ;
+    margin: 12px 8px 0 14px ;
 }
+
 .icon-white
 {
-    color: white !important;
-    float: left !important;
-    margin: 12px 8px 0 14px !important;
+    color: white;
+    float: left;
+    margin: 12px 8px 0 14px;
 }
-.text-header-black
-{
-    color: black !important;
-}
+
 .header
 {
     margin: 0 auto;
     width: 960px;
 }
+
 .header-about
 {
     width: 140px;
@@ -34,24 +34,20 @@ body
     background-color: #15a98c;
     display: inline-block;
 }
+
 .header-hobby
 {
     display: inline-block;
     width: 140px;
     margin-left: -1px;
 }
+
 .header-films
 {
     display: inline-block;
     width: 230px;
     margin-left: 15px;
 }
-.header-films:after
-{
-    display: block;
-    clear: both;
-}
-
 
 .header-about-text
 {
@@ -59,34 +55,47 @@ body
     line-height: 50px;
     color: #f5f5f5;
     font-family: "Georgia", serif;
-    margin-left: 10px !important;
+    margin-left: 10px;
 }
+
+.header-text
+{
+    font-size: 19px;
+    font-family: "Georgia", serif;
+    line-height: 50px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+}
+
 .self-background
 {
-    z-index: -1;
+    height: 400px;
     display: flex;
 }
+
 .container-self 
 {
     display: flex;
-    margin: 0 auto;
-    margin-top: -190px !important;
+    margin: -190px auto auto auto;
     width: 960px;
-    height: 350px !important;
-    z-index: 10 !important;
-
+    height: 350px ;
 }
+
 .container-topic 
 {
     margin: 0 60px -6px 0;
     float: left;
 }
+
 .photo 
 {
+    border-radius: 5px;
     width: 330px;
     height: 350px;
     display: block;
 }
+
 .topic 
 {
     width: 326px;
@@ -94,16 +103,19 @@ body
     margin-left: 4px;
     float: left;
 }
+
 .clear-html 
 {
     clear: both;
 }
+
 .container-main
 {
     display: flex;
     width: 960px;
     margin: 0 auto;
 }
+
 .topic-photo {
     margin-left: -2px;
     font-size: 23px;
@@ -116,9 +128,10 @@ body
     margin-top: 45px;
     margin-bottom: 10px;
 }
+
 .list 
 {
-    padding-left: 21px !important;
+    padding-left: 21px;
     padding-bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
@@ -126,33 +139,39 @@ body
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 .list-second 
 {
-    padding-left: 20px !important;
+    padding-left: 20px;
     font-size: 19px;
     line-height: 22px;
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 li
 {
     margin-bottom: 0.7em;
 }
+
 .container-quote 
 {
     margin: 50px  0 0;
     float: left;
     width: 560px;
 }
+
 .points 
 {
     width: 65px;
-    height: 80px;  
+    height: 80px;
 }
+
 blockquote {
     margin: -24px 66px 25px 0;
     color: rgb(156, 156, 156);
 }
+
 blockquote.dline {
     margin-left: 3px;
     width: 560px;
@@ -162,6 +181,7 @@ blockquote.dline {
     font-family: "Georgia", serif;
     font-style: italic;
 }
+
 .who {
     margin: -24px 66px 100px 7px;
     font-size: 16px;
@@ -171,24 +191,25 @@ blockquote.dline {
     font-family: "Open Sans", serif;
     font-weight: 600;
 }
+
 .container-text
 {
     float: right;
     margin-top: -115px;
     margin-left: -100px;
 }
+
 h1 
 {
-    margin-left: 8px;
-    margin-top: auto;
+    margin: auto 0 10px 8px;
     letter-spacing: 3px;
-    margin-bottom: 10px;
     font-size: 46px;
     line-height: 42px;
     color: #333333;
     font-family: "Open Sans", serif;
-    font-weight: 700 !important;
+    font-weight: 700;
 }
+
 .line 
 {
     display: flex;
@@ -199,17 +220,20 @@ h1
     border-radius: 3px;
     background-color: #45c3aa;
 }
+
 .story-first 
 {
     margin-top: 44px;
     margin-left: 2px;
 }
+
 .story-second 
 {
     margin-left: 2px;
     margin-top: 18px;
 
 }
+
 .story 
 {
     margin-bottom: 40px;
@@ -219,6 +243,7 @@ h1
     color: #555555;
     font-family: "Georgia", serif;
 }
+
 .hobby 
 {
     margin-top: 45px;
@@ -226,7 +251,9 @@ h1
     color: #333333;
     font-family: "Open Sans", serif;
 }
-.line {
+
+.line
+{
     margin-top: 20px;
     width: 60px;
     height: 6px;
@@ -234,19 +261,24 @@ h1
     border-radius: 3px;
     background-color: #45c3aa;
 }
-.story-first {
+
+.story-first
+{
     margin-top: 80px;
 }
-.story {
-    margin-bottom: 41px;
 
+.story
+{
+    margin-bottom: 41px;
     line-height: 32px;
     font-family: "Georgia", serif;
     font-style: normal;
     font-size: 19px;
     color: #555555;
 }
-.hobby {
+
+.hobby
+{
     margin-bottom: -3px;
     margin-left: -3px;
     font-size: 36px;
@@ -255,18 +287,25 @@ h1
     font-family: "Open Sans", serif;
     font-weight: 400;
 }
+
 .write-me 
 {
-    padding-bottom: 135px;
-
     margin-left: 2px;
-    width: 562px;
-    height: 263px;
     font-size: 19px;
     line-height: 31px;
     color: #15a98b;
     font-family: "Georgia", serif;
+    text-decoration: none;
+    border-bottom: 1px solid #15a98b;
 }
+
+.write-me::after
+{
+    content: " →";
+    color: rgb(0, 143, 168);
+    border-bottom: 1px solid white;
+}
+
 .last 
 {
     width: 562px;
@@ -276,16 +315,18 @@ h1
     color: #15a98b;
     font-family: "Georgia", serif;
 }
+
 .spec-symbol
 {
     color: rgb(0, 143, 168);
 }
+
 .container-favorite-films
 {
-    margin: 0 auto;
+    margin: -5px auto auto auto;
     width: 1200px;
-
 }
+
 .topic-favorite-films
 {
     margin-top: 96px;
@@ -296,6 +337,7 @@ h1
     font-family: "Open Sans", serif;
     font-weight: 400;
 }
+
 .card
 {
     margin-top: -2px;
@@ -304,11 +346,13 @@ h1
     display: inline-block;
     vertical-align: top;
 }
+
 .film-photo
 {
     width: 285px;
     height: 192px;
 }
+
 .film-topic
 {
     margin-top: 16px;
@@ -319,24 +363,28 @@ h1
     font-family: "Open Sans", serif;
     font-weight: 700;
 }
+
 .film-text
 {
-    margin-top: 16px;
+    margin-top: -2px;
 
     font-size: 16px;
     line-height: 28px;
     color: #555555;
     font-family: "Georgia", serif;
 }
-.one-plus-one{
+
+.one-plus-one
+{
     margin-top: -2px;
     width: 285px;
     display: inline-block;
     vertical-align: top;
 }
+
 .btn
 {
-    margin: 28px auto auto 480px;
+    margin: 7px auto auto 480px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
@@ -348,9 +396,10 @@ h1
     color: #f5f5f5;
     font-family: "Georgia", sans-serif;
 }
+
 .footer
 {
-    margin-top: 70px;
+    margin-top: 72px;
     height: 60px;
 
     text-align: center;
