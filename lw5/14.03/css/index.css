@@ -5,7 +5,7 @@ body
 
 .container-self
 {
-    margin: 90px auto auto 470px;
+    margin: 100px auto auto 480px;
     width: 960px;
     height: 350px;
 }
@@ -34,7 +34,7 @@ body
 {
     display: flex;
     width: 960px;
-    margin: 0 auto auto 470px;
+    margin: 0 auto auto 480px;
 }
 
 .topic-photo {
@@ -48,10 +48,15 @@ body
     margin: 45px auto 10px -5px;
 }
 
+.topic-photo-second
+{
+    margin-top: 55px;
+}
+
 .list
 {
+    margin-top: 15px;
     padding-left: 16px;
-    padding-bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
     line-height: 20px;
@@ -63,7 +68,7 @@ body
 {
     padding-left: 20px;
     font-size: 19px;
-    line-height: 22px;
+    line-height: 21px;
     color: #555555;
     font-family: "Georgia", serif;
 }
@@ -87,7 +92,7 @@ li
 }
 
 blockquote {
-    margin: -12px 66px 25px 60px;
+    margin: -14px 66px 25px 60px;
     color: rgb(156, 156, 156);
 }
 
@@ -111,7 +116,7 @@ blockquote.dline {
 }
 
 .container-text {
-    margin: 45px 0 0 -2px;
+    margin: 45px 0 0 0;
     float: left;
     width: 560px;
 }
@@ -142,7 +147,7 @@ h1
 
 .story-second
 {
-    margin-left: 2px;
+    margin-left: 1px;
     margin-top: 18px;
 }
 
