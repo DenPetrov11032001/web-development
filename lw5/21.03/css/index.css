@@ -3,22 +3,10 @@ body
     margin: auto;
 }
 
-.css-adaptive {
+.css_adaptive
+{
     max-width: 100%;
     height: auto;
-}
-
-.icon-black
-{
-    float: left ;
-    margin: 12px 8px 0 14px ;
-}
-
-.icon-white
-{
-    color: white;
-    float: left;
-    margin: 12px 8px 0 14px;
 }
 
 .header
@@ -27,7 +15,7 @@ body
     width: 960px;
 }
 
-.header-about
+.header_about
 {
     width: 140px;
     height: 50px;
@@ -35,30 +23,52 @@ body
     display: inline-block;
 }
 
-.header-hobby
+.header_about::before
+{
+    margin-left: 20px;
+    margin-right: 10px;
+    content: url('../images/about_me_icon.png');
+    filter: brightness(0) invert(1);
+}
+
+.header_hobby
 {
     display: inline-block;
     width: 140px;
-    margin-left: -1px;
+    margin-left: -3px;
 }
 
-.header-films
+.header_hobby::before
+{
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    content: url('../images/hobby_icon.png');
+}
+
+.header_films
 {
     display: inline-block;
     width: 230px;
     margin-left: 15px;
 }
 
-.header-about-text
+.header_films::before
+{
+    margin-left: 20px;
+    margin-right: 10px;
+    content: url('../images/video_icon.png');
+}
+
+.header_text_about
 {
     font-size: 19px;
     line-height: 50px;
     color: #f5f5f5;
     font-family: "Georgia", serif;
-    margin-left: 10px;
 }
 
-.header-text
+.header_text
 {
     font-size: 19px;
     font-family: "Georgia", serif;
@@ -68,13 +78,13 @@ body
     display: inline-block;
 }
 
-.self-background
+.self_background
 {
     height: 400px;
     display: flex;
 }
 
-.container-self 
+.container_self
 {
     display: flex;
     margin: -190px auto auto auto;
@@ -82,7 +92,7 @@ body
     height: 350px ;
 }
 
-.container-topic 
+.container_topic
 {
     margin: 0 60px -6px 0;
     float: left;
@@ -104,19 +114,14 @@ body
     float: left;
 }
 
-.clear-html 
-{
-    clear: both;
-}
-
-.container-main
+.container_main
 {
     display: flex;
     width: 960px;
     margin: 0 auto;
 }
 
-.topic-photo {
+.topic_photo {
     margin-left: -2px;
     font-size: 23px;
     line-height: 32px;
@@ -140,9 +145,9 @@ body
     font-family: "Georgia", serif;
 }
 
-.list-second 
+.list_second
 {
-    padding-left: 20px;
+    padding-left: 16px;
     font-size: 19px;
     line-height: 22px;
     color: #555555;
@@ -154,7 +159,7 @@ li
     margin-bottom: 0.7em;
 }
 
-.container-quote 
+.container_quote
 {
     margin: 50px  0 0;
     float: left;
@@ -167,13 +172,9 @@ li
     height: 80px;
 }
 
-blockquote {
-    margin: -24px 66px 25px 0;
-    color: rgb(156, 156, 156);
-}
-
-blockquote.dline {
-    margin-left: 3px;
+blockquote
+{
+    margin: -24px 66px 25px 3px;
     width: 560px;
     font-size: 28px;
     line-height: 42px;
@@ -182,7 +183,9 @@ blockquote.dline {
     font-style: italic;
 }
 
-.who {
+
+.who
+{
     margin: -24px 66px 100px 7px;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -192,7 +195,7 @@ blockquote.dline {
     font-weight: 600;
 }
 
-.container-text
+.container_text
 {
     float: right;
     margin-top: -115px;
@@ -201,44 +204,29 @@ blockquote.dline {
 
 h1 
 {
-    margin: auto 0 10px 8px;
-    letter-spacing: 3px;
+    margin: auto 0 10px 6px;
+    letter-spacing: 1px;
     font-size: 46px;
     line-height: 42px;
     color: #333333;
-    font-family: "Open Sans", bolder, serif;
-    font-weight: 700;
-}
-
-.line 
-{
-    display: flex;
-    margin-left: 1px;
-    margin-top: 31px;
-    width: 60px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #45c3aa;
-}
-
-.story-second 
-{
-    margin-left: 2px;
-    margin-top: 18px;
-
+    font-family: "Open Sans", Extra-Bold, serif;
 }
 
 .story 
 {
     margin-bottom: 40px;
-
     line-height: 1.7;
     font-size: 19px;
     color: #555555;
     font-family: "Georgia", serif;
 }
 
-.hobby 
+.story_first
+{
+    margin-top: 80px;
+}
+
+.hobby
 {
     margin-top: 45px;
     font-weight: 700;
@@ -249,22 +237,16 @@ h1
 .line
 {
     margin-top: 20px;
-    width: 60px;
+    width: 58px;
     height: 6px;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: #45c3aa;
-}
-
-.story-first
-{
-    margin-top: 80px;
 }
 
 .hobby
 {
-    margin-bottom: -3px;
-    margin-left: -3px;
+    margin: 45px 0 -3px -3px;
     font-size: 36px;
     line-height: 42px;
     color: #333333;
@@ -272,9 +254,9 @@ h1
     font-weight: 400;
 }
 
-.write-me 
+.write_me
 {
-    margin-left: 2px;
+    margin-left: 0;
     font-size: 19px;
     line-height: 31px;
     color: #15a98b;
@@ -283,35 +265,21 @@ h1
     border-bottom: 1px solid #15a98b;
 }
 
-.write-me::after
+.write_me::after
 {
     content: " →";
     color: rgb(0, 143, 168);
     border-bottom: 1px solid white;
 }
 
-.last 
-{
-    width: 562px;
-    height: 263px;
-    font-size: 19px;
-    line-height: 32px;
-    color: #15a98b;
-    font-family: "Georgia", serif;
-}
 
-.spec-symbol
-{
-    color: rgb(0, 143, 168);
-}
-
-.container-favorite-films
+.container_favorite_films
 {
     margin: -5px auto auto auto;
     width: 1200px;
 }
 
-.topic-favorite-films
+.topic_favorite_films
 {
     margin-top: 96px;
 
@@ -324,20 +292,19 @@ h1
 
 .card
 {
-    margin-top: -2px;
-    margin-right: 16px;
+    margin: -2px 16px 0 0;
     width: 285px;
     display: inline-block;
     vertical-align: top;
 }
 
-.film-photo
+.film_photo
 {
     width: 285px;
     height: 192px;
 }
 
-.film-topic
+.film_topic
 {
     margin-top: 16px;
 
@@ -348,7 +315,7 @@ h1
     font-weight: 700;
 }
 
-.film-text
+.film_text
 {
     margin-top: -2px;
 
@@ -358,7 +325,7 @@ h1
     font-family: "Georgia", serif;
 }
 
-.one-plus-one
+.one_plus_one
 {
     margin-top: -2px;
     width: 285px;
