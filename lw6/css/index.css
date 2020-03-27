@@ -355,6 +355,12 @@ h1
     font-family: "Georgia", sans-serif;
 }
 
+.btn:hover
+{
+    border: 2px solid #43c46b;
+    background-color: #43c46b ;
+}
+
 .form
 {
     margin: 50px auto auto auto;
@@ -430,6 +436,11 @@ h1
     height: 44px;
 }
 
+.input_cell_name:hover
+{
+    border: 2px solid #15a98c;
+}
+
 .form_cell_email
 {
     margin-top: 25px;
@@ -438,10 +449,15 @@ h1
 .input_cell_email
 {
     margin-top: 2px;
-    border: 2px solid #15a98c;
+    border: 2px solid #c4c4c4;
     border-radius: 5px;
     width: 536px;
     height: 44px;
+}
+
+.input_cell_email:hover
+{
+    border: 2px solid #15a98c;
 }
 
 
@@ -461,6 +477,12 @@ h1
     border-radius: 5px;
     width: 538px;
     height: 50px;
+}
+
+.input_cell_where_from:hover
+{
+    border: 2px solid #15a98c;
+
 }
 
 select
@@ -539,6 +561,11 @@ select
     border-radius: 5px;
     width: 536px;
     height: 146px;
+}
+
+.input_cell_text:hover
+{
+    border: 2px solid #15a98c;
 }
 
 .btn_submit
