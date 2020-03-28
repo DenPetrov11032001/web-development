@@ -104,20 +104,20 @@
         <button class="btn">Все Фильмы</button>
       </div>
     </div>
-    <form class="form" method="post">
+    <form class="form" action="php/index.php" method="get">
       <hr class="form_line_left">
       <h2 class="form_write_me">НАПИШИ МНЕ</h2>
       <hr class="form_line_right">
       <div class="form_cell form_cell_name">
         <p class="form_topic">Ваше имя</p>
         <label>
-          <input type="text" name="name" class="input_cell_name">
+          <input type="text" name="name" class="input_cell_name form_data_input">
         </label>
       </div>
       <div class="form_cell form_cell_email">
         <p class="form_topic">Ваш email</p>
         <label>
-          <input type="text" name="email" class="input_cell_email">
+          <input type="text" name="email" class="input_cell_email form_data_input">
         </label>
       </div>
       <div class="form_cell form_cell_email">
@@ -139,7 +139,7 @@
       <div class="form_cell input_text">
         <p class="form_topic">Ваше сообщение</p>
         <label>
-          <textarea type="text" name="name" class="input_cell_text"></textarea>
+          <textarea class="input_cell_text form_data_input" name="message" id="message"></textarea>
         </label>
       </div>
       <input type="submit" value=Отправить class="btn btn_submit" />
