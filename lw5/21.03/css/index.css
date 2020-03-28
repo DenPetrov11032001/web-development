@@ -11,7 +11,7 @@ body
 
 .header
 {
-    margin: 0 auto;
+    margin: 0 auto auto 480px;
     width: 960px;
 }
 
@@ -35,13 +35,12 @@ body
 {
     display: inline-block;
     width: 140px;
-    margin-left: -3px;
 }
 
 .header_hobby::before
 {
     margin-top: auto;
-    margin-left: 20px;
+    margin-left: 17px;
     margin-right: 10px;
     content: url('../images/hobby_icon.png');
 }
@@ -50,7 +49,7 @@ body
 {
     display: inline-block;
     width: 230px;
-    margin-left: 15px;
+    margin-left: 14px;
 }
 
 .header_films::before
@@ -81,13 +80,12 @@ body
 .self_background
 {
     height: 400px;
-    display: flex;
 }
 
-.container_self
+.self
 {
     display: flex;
-    margin: -190px auto auto auto;
+    margin: -194px auto auto 480px;
     width: 960px;
     height: 350px ;
 }
@@ -103,18 +101,17 @@ body
     border-radius: 5px;
     width: 330px;
     height: 350px;
-    display: block;
 }
 
-.topic 
+.topic
 {
-    width: 326px;
+    width: 330px;
     margin-right: 160px;
     margin-left: 4px;
     float: left;
 }
 
-.container_main
+.main
 {
     display: flex;
     width: 960px;
@@ -122,10 +119,10 @@ body
 }
 
 .topic_photo {
-    margin-left: -2px;
+    margin-left: 3px;
     font-size: 23px;
     line-height: 32px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     color: #15a98c;
     font-family: "Open Sans", serif;
     font-weight: 600;
@@ -136,7 +133,7 @@ body
 
 .list 
 {
-    padding-left: 21px;
+    padding-left: 29px;
     padding-bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
@@ -147,7 +144,7 @@ body
 
 .list_second
 {
-    padding-left: 16px;
+    padding-left: 23px;
     font-size: 19px;
     line-height: 22px;
     color: #555555;
@@ -159,9 +156,9 @@ li
     margin-bottom: 0.7em;
 }
 
-.container_quote
+.quote
 {
-    margin: 50px  0 0;
+    margin: 50px 0 0 60px;
     float: left;
     width: 560px;
 }
@@ -174,7 +171,7 @@ li
 
 blockquote
 {
-    margin: -24px 66px 25px 3px;
+    margin: -25px 66px 25px 3px;
     width: 560px;
     font-size: 28px;
     line-height: 42px;
@@ -186,27 +183,26 @@ blockquote
 
 .who
 {
-    margin: -24px 66px 100px 7px;
+    margin: -23px 66px 100px 6px;
     font-size: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.001em;
     line-height: 42px;
     color: #f5f5f5;
     font-family: "Open Sans", serif;
     font-weight: 600;
 }
 
-.container_text
+.text
 {
-    float: right;
     margin-top: -115px;
-    margin-left: -100px;
+    margin-left: -96px;
 }
 
 h1 
 {
-    margin: auto 0 10px 6px;
-    letter-spacing: 1px;
-    font-size: 46px;
+    margin: auto 0 10px 4px;
+    letter-spacing: 0.0001em;
+    font-size: 48px;
     line-height: 42px;
     color: #333333;
     font-family: "Open Sans", Extra-Bold, serif;
@@ -214,8 +210,7 @@ h1
 
 .story 
 {
-    margin-bottom: 40px;
-    line-height: 1.7;
+    line-height: 1.69;
     font-size: 19px;
     color: #555555;
     font-family: "Georgia", serif;
@@ -223,15 +218,24 @@ h1
 
 .story_first
 {
+    margin-bottom: 40px;
     margin-top: 80px;
 }
 
 .hobby
 {
-    margin-top: 45px;
-    font-weight: 700;
+    margin: 42px 0 5px -2px;
+    font-size: 36px;
+    line-height: 42px;
     color: #333333;
     font-family: "Open Sans", serif;
+    font-weight: 400;
+}
+
+.story_second
+{
+    margin-top: 15px;
+    margin-bottom: 41px;
 }
 
 .line
@@ -244,16 +248,6 @@ h1
     background-color: #45c3aa;
 }
 
-.hobby
-{
-    margin: 45px 0 -3px -3px;
-    font-size: 36px;
-    line-height: 42px;
-    color: #333333;
-    font-family: "Open Sans", serif;
-    font-weight: 400;
-}
-
 .write_me
 {
     margin-left: 0;
@@ -262,20 +256,28 @@ h1
     color: #15a98b;
     font-family: "Georgia", serif;
     text-decoration: none;
-    border-bottom: 1px solid #15a98b;
 }
 
 .write_me::after
 {
     content: " →";
     color: rgb(0, 143, 168);
-    border-bottom: 1px solid white;
+    border: 0;
+}
+
+.write_me_line
+{
+    position: relative;
+    top: -13px;
+    left: -220px;
+    width: 113px;
+    background-color: #15a98b;
 }
 
 
-.container_favorite_films
+.favorite_films
 {
-    margin: -5px auto auto auto;
+    margin: -20px auto auto 360px;
     width: 1200px;
 }
 
@@ -301,12 +303,13 @@ h1
 .film_photo
 {
     width: 285px;
-    height: 192px;
+    height: 190px;
+    border-radius: 4px;
 }
 
 .film_topic
 {
-    margin-top: 16px;
+    margin-top: 18px;
 
     font-size: 22px;
     line-height: 32px;
@@ -317,7 +320,7 @@ h1
 
 .film_text
 {
-    margin-top: -2px;
+    margin-top: -3px;
 
     font-size: 16px;
     line-height: 28px;
@@ -335,12 +338,13 @@ h1
 
 .btn
 {
-    margin: 7px auto auto 480px;
+    margin: 8px auto auto 480px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
     text-align: center;
     border-radius: 5px;
+    border: 0;
 
     font-size: 19px;
     line-height: 50px;
@@ -351,7 +355,7 @@ h1
 .footer
 {
     margin-top: 72px;
-    height: 60px;
+    height: 70px;
 
     text-align: center;
     background-color: #f5f5f5;
