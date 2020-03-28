@@ -571,12 +571,13 @@ select
 .btn_submit
 {
     margin-left: 80px;
-    margin-top: 48px;
+    margin-top: 44px;
 }
 
 .footer
 {
-    margin-top: 52px;
+    margin-top: 50px;
+    margin-bottom: 0;
     height: 69px;
 
     text-align: center;
