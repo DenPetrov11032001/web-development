@@ -80,6 +80,7 @@ body
 .self_background
 {
     height: 400px;
+    width: 1920px;
 }
 
 .self
@@ -96,7 +97,7 @@ body
     float: left;
 }
 
-.photo 
+.photo
 {
     border-radius: 5px;
     width: 330px;
@@ -106,8 +107,7 @@ body
 .topic
 {
     width: 330px;
-    margin-right: 160px;
-    margin-left: 4px;
+    margin-left: 0;
     float: left;
 }
 
@@ -115,11 +115,12 @@ body
 {
     display: flex;
     width: 960px;
-    margin: 0 auto;
+    margin-left: 480px;
+
 }
 
-.topic_photo {
-    margin-left: 3px;
+.topic_photo
+{
     font-size: 23px;
     line-height: 32px;
     letter-spacing: 0.03em;
@@ -131,9 +132,9 @@ body
     margin-bottom: 10px;
 }
 
-.list 
+.list
 {
-    padding-left: 29px;
+    padding-left: 22px;
     padding-bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
@@ -144,7 +145,7 @@ body
 
 .list_second
 {
-    padding-left: 23px;
+    padding-left: 20px;
     font-size: 19px;
     line-height: 22px;
     color: #555555;
@@ -163,7 +164,7 @@ li
     width: 560px;
 }
 
-.points 
+.points
 {
     width: 65px;
     height: 80px;
@@ -194,11 +195,12 @@ blockquote
 
 .text
 {
+    width: 570px;
     margin-top: -115px;
-    margin-left: -96px;
+    margin-left: 60px;
 }
 
-h1 
+h1
 {
     margin: auto 0 10px 4px;
     letter-spacing: 0.0001em;
@@ -208,7 +210,7 @@ h1
     font-family: "Open Sans", Extra-Bold, serif;
 }
 
-.story 
+.story
 {
     line-height: 1.69;
     font-size: 19px;
@@ -274,16 +276,23 @@ h1
     background-color: #15a98b;
 }
 
+.back_films
+{
+    background-color: #f9f9f9;
+    padding-top: 1px;
+    margin-top: 40px;
+    height: 1040px;
+}
 
 .favorite_films
 {
-    margin: -20px auto auto 360px;
+    margin: -60px auto auto 360px;
     width: 1200px;
 }
 
 .topic_favorite_films
 {
-    margin-top: 96px;
+    margin-top: 136px;
 
     font-size: 36px;
     line-height: 42px;
@@ -294,7 +303,7 @@ h1
 
 .card
 {
-    margin: -2px 16px 0 0;
+    margin: -2px 16px 0 -1px;
     width: 285px;
     display: inline-block;
     vertical-align: top;
@@ -320,7 +329,7 @@ h1
 
 .film_text
 {
-    margin-top: -3px;
+    margin-top: -4px;
 
     font-size: 16px;
     line-height: 28px;
@@ -338,7 +347,7 @@ h1
 
 .btn
 {
-    margin: 8px auto auto 480px;
+    margin: 10px auto auto 480px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
@@ -354,7 +363,7 @@ h1
 
 .footer
 {
-    margin-top: 72px;
+    margin-top: 70px;
     height: 70px;
 
     text-align: center;
@@ -364,4 +373,5 @@ h1
     color: #555555;
     font-family: "Georgia", sans-serif;
 }
+
 
