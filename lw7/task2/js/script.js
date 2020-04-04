@@ -57,7 +57,6 @@ function calc(input) {
                 data = calcBraceExpression(data);
                 let indexNextBrace = getIndexes(data, '(');
                 let countBrace = indexNextBrace.length;
-                console.log(countBrace);
                 for (countBrace; countBrace !== 0; countBrace--) {
                     data = calcBraceExpression(data);
                 }
