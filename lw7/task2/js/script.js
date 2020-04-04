@@ -34,14 +34,18 @@ function calcBraceExpression(data) {
     let indexSpaces = getIndexes(data, ' ');
     let countSpaces = indexSpaces.length;
 
-    if (countBrace > 0) {
-        data = data.replace(data.slice(indexSpaces[0] - 1, indexSpaces[countSpaces - 1]) ,
-                            ' ' + calcBraceExpression(data.slice(indexSpaces[0] - 1, indexSpaces[countSpaces - 1] - 1)));
+    if (countBrace > 1) {
+        data = data.replace(data.slice(indexStart[0] + 1, indexSpaces[countSpaces - 1] - 1),
+                            calcBraceExpression(data.slice(indexStart[0] + 1, indexSpaces[countSpaces - 1] - 1)));
+        return data;
+    }
+    if (countBrace === 1) {
+        data = data.replace(data.slice(indexStart[0], indexSpaces[countSpaces - 1]),
+                            ' ' + calcBraceExpression(data.slice(indexStart[0] + 1, indexSpaces[countSpaces - 1] - 1)));
         return data;
     }
     else {
-        data = getValueExpression(data);
-        return data;
+        return getValueExpression(data);
     }
 }
 
@@ -51,6 +55,12 @@ function calc(input) {
         if ((data[0] === '+') || (data[0] === '-') || (data[0] === '*') || (data[0] === '/')) {
             if ((data[1] === '(') || (data[2] === '(')) {
                 data = calcBraceExpression(data);
+                let indexNextBrace = getIndexes(data, '(');
+                let countBrace = indexNextBrace.length;
+                console.log(countBrace);
+                for (countBrace; countBrace !== 0; countBrace--) {
+                    data = calcBraceExpression(data);
+                }
                 data = getValueExpression(data);
                 return data;
             }
