@@ -1,42 +1,37 @@
-/**
- * @return {boolean}
- */
 function PrimeAlgorithm(number) {
-    let isPrime = true;
-    for (let i = 2; i < number; i++) {
-        if (number % i === 0) return false;
+    let isPrime = false;
+    if (number > 1) {
+        isPrime = true;
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) isPrime = false;
+        }
     }
-    return true;
+    return isPrime;
 }
 
+
 function isPrimeNumber(data) {
-    let isPrime;
-    if (typeof data === "object") {
-        for (let value of Object.values(data)) {
-            if (typeof value === "number") {
-                isPrime = PrimeAlgorithm(value);
-                if (isPrime) {
-                    console.log(value + " is prime number");
+    if (Array.isArray(data)) {
+        for (let elem of data) {
+            if (typeof elem === 'number') {
+                if (PrimeAlgorithm(elem)) {
+                    console.log(elem + ' is prime number');
+                } else {
+                    console.log(elem + ' is not prime number');
                 }
-                else {
-                    console.log(value + " is not prime number");
-                }
-            }
-            else {
-                console.log("Not correct value = " + value);
+            } else {
+                console.log('Not correct value = ' + elem);
             }
         }
     }
-    else if (typeof data === "number") {
-        isPrime = PrimeAlgorithm(data);
-        if (isPrime) {
-            console.log(data + " is prime number");
-        }
-        else {
-            console.log(data + " is not prime number");
+    if (typeof data === 'number') {
+        if (PrimeAlgorithm(data)) {
+            console.log(data + ' is prime number');
+        } else {
+            console.log(data + ' is not prime number');
         }
     }
-    else {
-        return console.log("Not correct input data.");
+    if ((typeof data !== 'number') && (!Array.isArray(data))) {
+        console.log('Not correct input data.');
     }
 }
