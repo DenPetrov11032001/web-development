@@ -290,14 +290,15 @@ h1
 .favorite_films
 {
     margin: 0 auto;
+    height: 1000px;
+    width: 1200px;
 }
 
 .topic_favorite_films
 {
-    margin-top: 95px;
-
+    margin-left: 8px;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 41px;
     color: #333333;
     font-family: "Open Sans", serif;
     font-weight: 400;
@@ -305,7 +306,7 @@ h1
 
 .card
 {
-    margin: -2px 16px 0 0;
+    margin: -2px 8px 0 8px;
     width: 285px;
     display: inline-block;
     vertical-align: top;
@@ -321,7 +322,7 @@ h1
 .film_topic
 {
     margin-top: 18px;
-
+    margin-left: -2px;
     font-size: 22px;
     line-height: 32px;
     color: #333333;
@@ -349,7 +350,7 @@ h1
 
 .btn
 {
-    margin: 10px auto auto 480px;
+    margin: 10px auto auto 488px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
