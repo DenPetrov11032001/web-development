@@ -17,20 +17,6 @@
         return $fileDataArray;
     }
 
-    // function printData(array $fileDataArray)
-    // {
-    //     $nameUser = $fileDataArray['name'];
-    //     $emailUser = $fileDataArray['email'];
-    //     $countryUser = $fileDataArray['country'];
-    //     $genderUser = $fileDataArray['gender'];
-    //     $messageUser = $fileDataArray['message'];
-    
-    //     echo "Name: " . $nameUser . "\n";
-    //     echo "Email: " . $emailUser . "\n";
-    //     echo "Country: " . $countryUser . "\n";
-    //     echo "Gender: " . $genderUser . "\n";
-    //     echo "Message: " . $messageUser . "\n";
-    // }
 
     header("Content-Type: text/plain");
 

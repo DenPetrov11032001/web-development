@@ -11,12 +11,13 @@ body
 
 .header
 {
-    margin: 0 auto auto 480px;
+    margin: 0 auto;
     width: 960px;
 }
 
 .header_about
 {
+    margin-left: 8px;
     width: 140px;
     height: 50px;
     background-color: #15a98c;
@@ -86,7 +87,7 @@ body
 .self
 {
     display: flex;
-    margin: -194px auto auto 480px;
+    margin: -194px auto auto auto;
     width: 960px;
     height: 350px ;
 }
@@ -99,6 +100,7 @@ body
 
 .photo
 {
+    margin-left: 8px;
     border-radius: 5px;
     width: 330px;
     height: 350px;
@@ -107,7 +109,7 @@ body
 .topic
 {
     width: 330px;
-    margin-left: 0;
+    margin-left: 9px;
     float: left;
 }
 
@@ -115,8 +117,7 @@ body
 {
     display: flex;
     width: 960px;
-    margin-left: 480px;
-
+    margin: 0 auto;
 }
 
 .topic_photo
@@ -196,13 +197,13 @@ blockquote
 .text
 {
     width: 570px;
-    margin-top: -115px;
-    margin-left: 60px;
+    margin-top: -114px;
+    margin-left: 64px;
 }
 
 h1
 {
-    margin: auto 0 10px 4px;
+    margin: -1px 0 10px 4px;
     letter-spacing: 0.0001em;
     font-size: 48px;
     line-height: 42px;
@@ -221,7 +222,7 @@ h1
 .story_first
 {
     margin-bottom: 40px;
-    margin-top: 80px;
+    margin-top: 81px;
 }
 
 .hobby
@@ -242,10 +243,11 @@ h1
 
 .line
 {
-    margin-top: 20px;
-    width: 58px;
+    margin-top: 21px;
+    width: 60px;
     height: 6px;
     position: absolute;
+    border: 0;
     border-radius: 10px;
     background-color: #45c3aa;
 }
@@ -269,11 +271,12 @@ h1
 
 .write_me_line
 {
-    position: relative;
-    top: -13px;
-    left: -220px;
-    width: 113px;
-    background-color: #15a98b;
+    margin: -5px 0 22px 2px;
+    width: 112px;
+    height: 1px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #45c3aa;
 }
 
 .back_films
@@ -287,12 +290,11 @@ h1
 .favorite_films
 {
     margin: -60px auto auto 360px;
-    width: 1200px;
 }
 
 .topic_favorite_films
 {
-    margin-top: 96px;
+    margin-top: 95px;
 
     font-size: 36px;
     line-height: 42px;
@@ -347,7 +349,7 @@ h1
 
 .btn
 {
-    margin: 8px auto auto 480px;
+    margin: 10px auto auto 480px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
@@ -356,14 +358,14 @@ h1
     border: 0;
 
     font-size: 19px;
-    line-height: 50px;
+    line-height: 44px;
     color: #f5f5f5;
     font-family: "Georgia", sans-serif;
 }
 
 .form
 {
-    margin: 50px auto auto 610px;
+    margin: 0 auto;
     width: 700px;
 }
 
@@ -371,9 +373,8 @@ h1
 {
     display: inline-block;
     position: relative;
-    top: -3px;
-    margin-top: -20px;
-    margin-left: -7px;
+    top: -4px;
+    margin-left: 2px;
     border: none;
     background-color: #c4c4c4;
     color: #c4c4c4;
@@ -384,9 +385,9 @@ h1
 .form_write_me
 {
     display: inline-block;
-    margin: -4px 27px auto 23px;
+    margin: 46px 16px auto 24px;
     font-size: 36px;
-    line-height: 41px;
+    line-height: 40px;
     color: #333333;
     font-family: "Open Sans", serif;
     font-weight: 300;
@@ -395,11 +396,12 @@ h1
 .form_cell
 {
     width: 540px;
-    margin-left: 80px;
+    margin: 0 auto;
 }
 
 .form_cell_name
 {
+    margin-left: 8px;
     margin-top: 70px;
 }
 
@@ -443,6 +445,7 @@ h1
 
 .form_cell_email
 {
+    margin-left: 8px;
     margin-top: 25px;
 }
 
@@ -472,6 +475,7 @@ h1
 
 .form_cell_where_form
 {
+    margin-left: 8px;
     margin-top: 25px;
 }
 
@@ -480,7 +484,7 @@ h1
     margin-top: 4px;
     border: 2px solid #c4c4c4;
     border-radius: 5px;
-    width: 538px;
+    width: 540px;
     height: 50px;
 }
 
@@ -511,6 +515,7 @@ select
 
 .form_cell_gender
 {
+    margin-left: 8px;
     margin-top: 42px;
 }
 
@@ -557,6 +562,7 @@ select
 
 .input_text
 {
+    margin-left: 8px;
     margin-top: 36px;
 }
 
@@ -576,7 +582,7 @@ select
 
 .btn_submit
 {
-    margin-left: 80px;
+    margin-left: 88px;
     margin-top: 46px;
     text-align: center;
 }

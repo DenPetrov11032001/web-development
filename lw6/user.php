@@ -8,9 +8,9 @@
 </head>
   <body>
     <form class="form" action="php/user.php" method="get">
-      <hr class="form_line_left">
+      <hr class="form_line">
       <h2 class="form_write_me">ВАШИ ДАННЫЕ</h2>
-      <hr class="form_line_right">
+      <hr class="form_line">
       <div class="form_cell form_cell_name">
         <p class="form_topic">Ваше имя</p>
         <div class="input_cell_name">

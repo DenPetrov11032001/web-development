@@ -35,7 +35,7 @@
         }
         else
         {
-            echo "Field {$strName} doesn't exsist." . "\n";
+            echo "Field {$strName} doesn't exist." . "\n";
         }
     }
 
@@ -47,5 +47,7 @@
 
     writeDataToFile($fileName);
 
-    header("Location: /php/user-service.php" . "?email={$emailUser}");
-?>
+    $host  = $_SERVER['HTTP_HOST'];
+    $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = 'user-service.php';
+    header("Location: http://$host/php/$extra" . "?email={$emailUser}");

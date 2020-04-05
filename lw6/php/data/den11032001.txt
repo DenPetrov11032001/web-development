@@ -1,1 +1,0 @@
-name=>denis;email=>den11032001;country=>rus;gender=>male;message=>Привет, я денис;
