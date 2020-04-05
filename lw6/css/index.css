@@ -287,16 +287,21 @@ h1
     height: 1040px;
 }
 
+.card_deck
+{
+    margin-left: 18px;
+}
+
 .favorite_films
 {
     margin: 0 auto;
     height: 1000px;
-    width: 1200px;
+    width: 1220px;
 }
 
 .topic_favorite_films
 {
-    margin-left: 8px;
+    margin-left: 9px;
     font-size: 36px;
     line-height: 41px;
     color: #333333;
@@ -306,7 +311,7 @@ h1
 
 .card
 {
-    margin: -2px 8px 0 8px;
+    margin: -2px 9px 0 8px;
     width: 285px;
     display: inline-block;
     vertical-align: top;
