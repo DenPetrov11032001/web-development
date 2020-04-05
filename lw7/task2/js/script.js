@@ -43,14 +43,12 @@ function calcBraceExpression(data) {
         data = data.replace(data.slice(indexStart[0], indexSpaces[countSpaces - 1]),
                             ' ' + calcBraceExpression(data.slice(indexStart[0] + 1, indexSpaces[countSpaces - 1] - 1)));
         return data;
-    }
-    else {
+    } else {
         return getValueExpression(data);
     }
 }
 
-function calc(input) {
-    let data = input;
+function calc(data) {
     if (typeof data === 'string') {
         if ((data[0] === '+') || (data[0] === '-') || (data[0] === '*') || (data[0] === '/')) {
             if ((data[1] === '(') || (data[2] === '(')) {
@@ -62,16 +60,13 @@ function calc(input) {
                 }
                 data = getValueExpression(data);
                 return data;
+            } else {
+                return getValueExpression(data);
             }
-            else {
-                 return getValueExpression(data);
-            }
-        }
-        else {
+        } else {
             return console.log('Not correct input data.');
         }
-    }
-    else {
-         return console.log('Not correct input data.');
+    } else {
+        return console.log('Not correct input data.');
     }
 }
