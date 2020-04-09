@@ -17,11 +17,10 @@
         return $fileDataArray;
     }
 
-
     header("Content-Type: text/plain");
 
     $emailUser = $_GET['email'];
-    $fileDataArray = getDataFromFile('data/' . $emailUser . '.txt');
+    $fileDataArray = getDataFromFile('../data/' . $emailUser . '.txt');
 
     $nameUser = $fileDataArray['name'];
     $emailUser = $fileDataArray['email'];
@@ -35,5 +34,5 @@
     define("gender", "{$genderUser}");
     define("message", "{$messageUser}");
 
-    header("Location: /user.php" . "?name={$nameUser}&email={$emailUser}&country={$countryUser}&gender={$genderUser}&message={$messageUser}");
+    header("Location: /src/templates/feedbacks.tpl.php" . "?name={$nameUser}&email={$emailUser}&country={$countryUser}&gender={$genderUser}&message={$messageUser}");
 ?>

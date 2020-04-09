@@ -26,28 +26,13 @@
         }
     }
 
-    function userDataPrint(?string $strName)
-    {
-        $value = getParameter("{$strName}");
-        if ($value != null)
-        {
-            echo $strName . ": {$value}" . "\n";
-        }
-        else
-        {
-            echo "Field {$strName} doesn't exist." . "\n";
-        }
-    }
-
-    header("Content-Type: text/plain");
-
     $emailUser = getParameter('email'); 
-    $dir = 'data/';
-    $fileName = $dir . $emailUser . '.txt'; 
+    $dir = '../data/';
+    $fileName = $dir . $emailUser . '.txt';
 
     writeDataToFile($fileName);
 
     $host  = $_SERVER['HTTP_HOST'];
     $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    $extra = 'user-service.php';
-    header("Location: http://$host/php/$extra" . "?email={$emailUser}");
+    $extra = 'feedbacks_list_page.php';
+    header("Location: http://$host/src/pages/$extra" . "?email={$emailUser}");

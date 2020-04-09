@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>Profile Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="/web/css/feedbacks.css">
 </head>
   <body>
-    <form class="form" action="php/user.php" method="get">
+    <form class="form" action="/src/pages/feedbacks_list_page.php" method="get">
       <hr class="form_line">
       <h2 class="form_write_me">ВАШИ ДАННЫЕ</h2>
       <hr class="form_line">
