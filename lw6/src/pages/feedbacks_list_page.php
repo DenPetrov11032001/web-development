@@ -28,11 +28,5 @@
     $genderUser = $fileDataArray['gender'];
     $messageUser = $fileDataArray['message'];
 
-    define("name", "{$nameUser}");
-    define("email", "{$emailUser}");
-    define("country", "{$countryUser}");
-    define("gender", "{$genderUser}");
-    define("message", "{$messageUser}");
-
     header("Location: /src/templates/feedbacks.tpl.php" . "?name={$nameUser}&email={$emailUser}&country={$countryUser}&gender={$genderUser}&message={$messageUser}");
 ?>
