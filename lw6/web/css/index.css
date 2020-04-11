@@ -81,7 +81,6 @@ body
 .self_background
 {
     height: 400px;
-    width: 1920px;
 }
 
 .self
@@ -502,11 +501,11 @@ h1
 select
 {
     font-size: 16px;
-    background: url("../images/arrow_down.png") no-repeat right;
+    background: url("../images/arrow_down2.png") no-repeat right;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-position-x: 501px;
+    background-position-x: 500px;
 }
 
 .select_country
