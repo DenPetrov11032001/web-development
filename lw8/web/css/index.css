@@ -298,6 +298,7 @@ h1
     float: left;
     background: 0;
     border: 0;
+    cursor: pointer;
 }
 
 .btn_previous
@@ -306,6 +307,7 @@ h1
     float: right;
     background: 0;
     border: 0;
+    cursor: pointer;
 }
 
 .slider_wrapper {
