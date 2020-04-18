@@ -288,29 +288,39 @@ h1
 
 .slider
 {
+    height: 800px;
     overflow: hidden;
     margin-left: 18px;
 }
 
 .btn_next
 {
-    margin: 160px auto auto 100px;
-    float: left;
+    margin: 160px 100px auto auto;
+    float: right;
     background: 0;
     border: 0;
+}
+
+.btn_next:hover
+{
     cursor: pointer;
 }
 
 .btn_previous
 {
-    margin: 160px 100px auto auto;
-    float: right;
+    margin: 160px auto auto 100px;
+    float: left;
     background: 0;
     border: 0;
+}
+
+.btn_previous:hover
+{
     cursor: pointer;
 }
 
-.slider_wrapper {
+.films_wrapper
+{
     margin: 0 auto;
     height: 810px;
     width: 1220px;
@@ -378,7 +388,7 @@ h1
 
 .btn
 {
-    margin: 84px auto auto 488px;
+    margin: 130px auto auto 488px;
     width: 220px;
     height: 50px;
     background-color: #15a98c;
