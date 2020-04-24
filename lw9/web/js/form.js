@@ -21,61 +21,49 @@ function checkEmail(email) {
      ? successResponse.json()
      : null
   );
-    solution.push(value)
-    return Promise.all(solution);
 
-    // .then((data) => {
-    //   console.log(data);
-    //   console.log(typeof(data));
-    //   if (data === true) {
-    //     console.log();
-    //     console.log('lol');
-    //     return true;
-    //   } else {
-    //     console.log('lmao');
-    //     return false;
-    //   }
-    // })
+  solution.push(value)
+  return Promise.all(solution);
 }
 
 
 async function dataValidation() {
   const name = document.getElementById('name').value;
-  const isNameValidation = checkName(name);
+  const isNameValid = checkName(name);
 
   const email = document.getElementById('email').value;
-  let isEmailValidation = await checkEmail(email);
+  let isEmailValid = await checkEmail(email);
 
   const message = document.getElementById('message').value;
 
   let cellName = document.querySelector('.input_cell_name');
-  if (isNameValidation) {
+  if (isNameValid) {
     cellName.style.border = '2px solid #c4c4c4';
   } else {
     cellName.style.border = '2px solid #EE5252';
   }
 
-  let emailElem = document.querySelector('.input_cell_email');
-  if (isEmailValidation[0] === true) {
-    emailElem.style.border = '2px solid #c4c4c4';
+  let cellEmail = document.querySelector('.input_cell_email');
+  if (isEmailValid[0] === true) {
+    cellEmail.style.border = '2px solid #c4c4c4';
   } else {
-    emailElem.style.border = '2px solid #EE5252';
+    cellEmail.style.border = '2px solid #EE5252';
   }
 
-  let messageElem = document.querySelector('.input_cell_text');
+  let cellMessage = document.querySelector('.input_cell_text');
   if (message === '') {
-    messageElem.style.border = '2px solid #EE5252';
+    cellMessage.style.border = '2px solid #EE5252';
   } else {
-    messageElem.style.border = '2px solid #c4c4c4';
+    cellMessage.style.border = '2px solid #c4c4c4';
   }
 
-  let galochka = document.querySelector('.galochka');
+  let checkMark = document.querySelector('.checkMark');
   let messageTrue = document.querySelector('.message_true_form');
-  if (isNameValidation && (isEmailValidation[0] === true) && (message !== '')) {
-    galochka.style.visibility = 'visible';
+  if (isNameValid && (isEmailValid[0] === true) && (message !== '')) {
+    checkMark.style.visibility = 'visible';
     messageTrue.style.visibility = 'visible';
   } else {
-    galochka.style.visibility = 'hidden';
+    checkMark.style.visibility = 'hidden';
     messageTrue.style.visibility = 'hidden';
   }
 }
