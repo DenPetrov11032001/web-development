@@ -2,7 +2,7 @@ function checkName(str)
 {
   const chars = /^[\wА-я]+$/;
   const digits = /\d/;
-  return chars.test(str) && !digits.test(str) && str.length >= 3;
+  return chars.test(str) && !digits.test(str) && (str.length >= 3);
 }
 
 function checkEmail(email) {
