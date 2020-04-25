@@ -645,7 +645,6 @@ select
 .check_mark
 {
     display: block;
-    visibility: hidden;
 
     content: url('../images/checkMark.png');
 
@@ -657,8 +656,6 @@ select
 
 .message_true_form
 {
-    visibility: hidden;
-
     float: left;
     margin: 56px auto auto 14px;
 
@@ -669,6 +666,26 @@ select
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+}
+
+.input_data_true
+{
+    border: 2px solid #c4c4c4;
+}
+
+.input_data_false
+{
+    border: 2px solid #EE5252;
+}
+
+.data_visibility_true
+{
+    visibility: visible;
+}
+
+.data_visibility_false
+{
+    visibility: hidden;
 }
 
 .clear
