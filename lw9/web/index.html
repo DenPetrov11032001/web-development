@@ -185,7 +185,7 @@
       </div>
       <button class="btn_all_films">Все фильмы</button>
     </div>
-    <div class="form">
+    <form class="form" onsubmit="return false;">
       <hr class="form_line">
       <h2 class="form_write_me">НАПИШИ МНЕ</h2>
       <hr class="form_line">
@@ -218,11 +218,9 @@
         </div>
       </div>
       <button class="btn btn_submit" id="submit">Отправить</button>
-      <div>
-        <img src="images/checkMark.png" alt="checkMark" class="checkMark">
-        <p class="message_true_form">Ваше сообщение успешно отправлено</p>
-      </div>
-    </div>
+      <span class="check_mark"></span>
+      <span class="message_true_form">Ваше сообщение успешно отправлено</span>
+    </form>
     <div class="clear"></div>
     <p class="footer">© 2020 Петров Денис Пс-12. Поволжский государственный технологический университет, ФГБОУ ВО "ПГТУ"</p>
   </body>

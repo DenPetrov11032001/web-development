@@ -57,7 +57,7 @@ async function dataValidation() {
     cellMessage.style.border = '2px solid #c4c4c4';
   }
 
-  let checkMark = document.querySelector('.checkMark');
+  let checkMark = document.querySelector('.check_mark');
   let messageTrue = document.querySelector('.message_true_form');
   if (isNameValid && (isEmailValid[0] === true) && (message !== '')) {
     checkMark.style.visibility = 'visible';

@@ -642,11 +642,14 @@ select
     float: left;
 }
 
-.checkMark
+.check_mark
 {
+    display: block;
     visibility: hidden;
 
-    margin: 49px auto auto 50px;
+    content: url('../images/checkMark.png');
+
+    margin: 56px auto auto 50px;
     float: left;
     height: 28px;
     width: 27px;
@@ -657,7 +660,7 @@ select
     visibility: hidden;
 
     float: left;
-    margin: 49px auto auto 14px;
+    margin: 56px auto auto 14px;
 
     width: 138px;
     height: 22px;
