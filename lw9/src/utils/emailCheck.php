@@ -3,15 +3,19 @@
     $email = $_POST["email"];
     header('Content-Type: application/json');
 
-    $out[] = $_POST;
-    $email = $out[0];
+    $email = $_POST['email'];
+    $name = $_POST['name'];
 
-    $userEmail = substr($email[json], 10, -2);
-    if (filter_var($userEmail, FILTER_VALIDATE_EMAIL))
+    if (filter_var($email, FILTER_VALIDATE_EMAIL))
     {
-        echo json_encode(true);
+        $isEmailTrue = true;
     }
     else
     {
-        echo json_encode(false);
+        $isEmailTrue = false;
     }
+
+    $isNameTrue = ctype_alpha($name) && (strlen($name) >= 3);
+
+    $arr = array('email' => $isEmailTrue, 'name' => $isNameTrue);
+    echo json_encode($arr);
