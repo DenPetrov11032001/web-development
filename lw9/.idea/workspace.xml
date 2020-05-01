@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02c37121-6c5f-43a6-9cfd-c2c113b00359" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lw9ver1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lw6" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,7 +43,8 @@
       <updated>1587721638772</updated>
       <workItem from="1587721640127" duration="27646000" />
       <workItem from="1587811745219" duration="1226000" />
-      <workItem from="1587827055221" duration="8867000" />
+      <workItem from="1587827055221" duration="9146000" />
+      <workItem from="1588326361206" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="ver1">
       <created>1587752037300</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587840029158</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ver5.2">
+      <created>1587840157287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587840157287</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,25 +107,26 @@
     <MESSAGE value="ver3" />
     <MESSAGE value="ver4" />
     <MESSAGE value="ver5" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver5" />
+    <MESSAGE value="ver5.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver5.2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1065" y="2" key="CommitChangelistDialog2" timestamp="1587840028212">
+    <state x="1065" y="2" key="CommitChangelistDialog2" timestamp="1587840156348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1065" y="2" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587840028212" />
+    <state x="1065" y="2" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587840156348" />
     <state x="368" y="85" key="DiffContextDialog" timestamp="1587838726314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587838726314" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587837602594">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1588326376743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587837602594" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1587840031124">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588326376743" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1587840160287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587840031124" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587840160287" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587736850338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

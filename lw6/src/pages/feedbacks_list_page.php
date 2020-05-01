@@ -1,8 +1,6 @@
 <?php 
-    function getParameter(string $name): ?string
-    {
-        return isset($_GET[$name]) ? (string)$_GET[$name] : null;
-    }
+    include("../utils/request.php");
+    include("../utils/template.php");
 
     function getDataFromFile(string $fileName): array
     {
@@ -17,8 +15,6 @@
         return $fileDataArray;
     }
 
-    header("Content-Type: text/plain");
-
     $emailUser = $_GET['email'];
     $fileDataArray = getDataFromFile('../data/' . $emailUser . '.txt');
 
@@ -28,5 +24,7 @@
     $genderUser = $fileDataArray['gender'];
     $messageUser = $fileDataArray['message'];
 
-    header("Location: /src/templates/feedbacks.tpl.php" . "?name={$nameUser}&email={$emailUser}&country={$countryUser}&gender={$genderUser}&message={$messageUser}");
-?>
+    renderTemplate('feedbacks.tpl.php', ['name' => "{$nameUser}", 'email' => "{$emailUser}",
+                                                   'country' => "{$countryUser}", 'gender' => "{$genderUser}",
+                                                   'message' => "{$messageUser}"]);
+

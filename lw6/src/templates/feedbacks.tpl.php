@@ -7,20 +7,20 @@
   <link rel="stylesheet" href="/web/css/feedbacks.css">
 </head>
   <body>
-    <form class="form" action="/src/pages/feedbacks_list_page.php" method="get">
+    <form class="form" method="GET">
       <hr class="form_line">
       <h2 class="form_write_me">ВАШИ ДАННЫЕ</h2>
       <hr class="form_line">
       <div class="form_cell form_cell_name">
         <p class="form_topic">Ваше имя</p>
         <div class="input_cell_name">
-          <p class="data_answer"><?php  echo $_GET[name];?></p>
+          <p class="data_answer"><?php echo isset($args['name']) ? $args['name'] : Anomymous;?></p>
         </div>
       </div>
       <div class="form_cell form_cell_email">
         <p class="form_topic">Ваш email</p>
           <div class="input_cell_name">
-            <p class="data_answer"><?php  echo $_GET[email];?></p>
+            <p class="data_answer"><?php echo isset($args['email']) ? $args['email'] : ‘None;?></p>
           </div>
       </div>
       <div class="form_cell form_cell_email">
@@ -28,7 +28,7 @@
         <div class="input_cell_name">
           <p class="data_answer">
             <?php  
-            if ($_GET[country] === 'rus') echo 'Россия'; 
+            if (isset($args['country']) == 'rus') echo 'Россия';
             else echo 'USA';?>
           </p>
         </div>
@@ -38,7 +38,7 @@
         <div class="input_cell_name">
           <p class="data_answer">  
             <?php  
-              if ($_GET[gender] === 'male') echo 'Мужской'; 
+              if (isset($args['gender']) == 'male') echo 'Мужской';
               else echo 'Женский';?>
           </p>    
         </div>      
@@ -47,7 +47,7 @@
         <p class="form_topic">Ваше сообщение</p>
         <div class="input_cell_text">
           <p class="data_answer">
-            <?php  echo $_GET[message];?>
+            <?php echo isset($args['message']) ? $args['message'] : 'None';?></p>
           </p>
         </div>
       </div>
