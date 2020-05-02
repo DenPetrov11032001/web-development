@@ -11,46 +11,34 @@ function checkData(email, name) {
      ? successResponse.json()
      : null
   );
-
   return Promise.resolve(value);
+}
+
+function dataFn(isValid, elementId) {
+  cell = document.getElementById(elementId);
+  if (isValid) {
+    cell.classList.remove('input_data_false');
+    cell.classList.add('input_data_true');
+  } else {
+    cell.classList.remove('input_data_true');
+    cell.classList.add('input_data_false');
+  }
+  return null;
 }
 
 async function dataValidation() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
   const dataValid = await checkData(email, name);
 
   const isEmailValid = dataValid.email;
   const isNameValid = dataValid.name;
+  const isMessageValid = (message !== '');
 
-  const message = document.getElementById('message').value;
-
-  const cellName = document.getElementById('name');
-  if (isNameValid) {
-    cellName.classList.remove('input_data_false');
-    cellName.classList.add('input_data_true');
-  } else {
-    cellName.classList.remove('input_data_true');
-    cellName.classList.add('input_data_false');
-  }
-
-  const cellEmail = document.getElementById('email');
-  if (isEmailValid) {
-    cellEmail.classList.remove('input_data_false');
-    cellEmail.classList.add('input_data_true');
-  } else {
-    cellEmail.classList.remove('input_data_true');
-    cellEmail.classList.add('input_data_false');
-  }
-
-  const cellMessage = document.getElementById('message');
-  if (message !== '') {
-    cellMessage.classList.remove('input_data_false');
-    cellMessage.classList.add('input_data_true');
-  } else {
-    cellMessage.classList.remove('input_data_true');
-    cellMessage.classList.add('input_data_false');
-  }
+  dataFn(isNameValid, 'name');
+  dataFn(isEmailValid, 'email');
+  dataFn(isMessageValid, 'message');
 
   const checkMark = document.getElementById('check_mark');
   const messageTrue = document.getElementById('you_message_true');

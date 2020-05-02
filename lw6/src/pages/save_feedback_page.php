@@ -2,7 +2,6 @@
 
     function saveFeedbackPage()
     {
-        $isWriteInFile = false;
         $email = getParameter('email');
         $fileName = '../src/data/' . $email . '.txt';
         $name = getParameter('name');
@@ -17,6 +16,8 @@
         {
             $isDataCorrect = 'Ваши данные не приняты';
         }
+
+        $isWriteInFile = false;
         foreach ($_POST as $key => $value)
         {
             if (($key == 'name') || ($key == 'country')
