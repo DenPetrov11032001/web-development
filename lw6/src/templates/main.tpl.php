@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Profile Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/web/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
   </head>
   <body>
     <div class="header">
@@ -12,9 +12,9 @@
       <div class="header_text text_header_black header_hobby">Мое хобби</div>
       <div class="header_text text_header_black header_films">Любимые фильмы</div>
     </div>
-    <img src="/web/images/background.png" alt="background" class="self_background css_adaptive">
+    <img src="../images/background.png" alt="background" class="self_background css_adaptive">
     <div class="self">
-      <img src="/web/images/me.jpg" class="photo" alt="my photo">
+      <img src="../images/me.jpg" class="photo" alt="my photo">
       <div class="quote">
         <blockquote>Мы берем на себя много, потому что мало чего боимся</blockquote>
         <p class="who">—  Том Демарко. Deadline</p>
@@ -61,7 +61,7 @@
         <div class="favorite_films">
           <p class="topic_favorite_films">Любимые фильмы</p>
           <div class="card">
-            <img src="/web/images/interstellar.png" class="film_photo" alt="photo">
+            <img src="../images/interstellar.png" class="film_photo" alt="photo">
             <p class="film_topic">Интерстеллар</p>
             <p class="film_text"> Фильм повествует о путешествиях группы исследователей,
               которые используют недавно обнаруженный пространственно-временной тоннель,
@@ -71,7 +71,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="/web/images/inception.png" class="film_photo" alt="photo">
+            <img src="../images/inception.png" class="film_photo" alt="photo">
             <p class="film_topic">Начало</p>
             <p class="film_text"> Кобб — лучший из лучших в опасном искусстве извлечения:
               он крадет ценные секреты из глубин подсознания во время сна, когда человеческий разум наиболее уязвим.
@@ -81,7 +81,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="/web/images/gate.png" class="film_photo" alt="photo">
+            <img src="../images/gate.png" class="film_photo" alt="photo">
             <p class="film_topic">Врата Штейна</p>
             <p class="film_text">
               Акихабара — интереснейшее место, где обитают самые разные люди — от слегка сдвинутых по фазе до больных на всю голову.
@@ -93,7 +93,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="/web/images/one_plus_one.png" class="film_photo" alt="photo">
+            <img src="../images/one_plus_one.png" class="film_photo" alt="photo">
             <p class="film_topic">1+1</p>
             <p class="film_text">
               Парализованный богатый аристократ Филипп, ставший инвалидом после того, как разбился на параплане, ищет себе помощника.
@@ -107,7 +107,7 @@
         </div>
       </div>
     </div>
-    <form class="form" action="/web/index.php" method="POST">
+    <form class="form" action="../index.php" method="POST">
       <hr class="form_line">
       <h2 class="form_write_me">НАПИШИ МНЕ</h2>
       <hr class="form_line">
@@ -136,11 +136,13 @@
         </div>
         <div class="input_text">
           <p class="form_topic">Ваше сообщение</p>
-          <textarea class="input_cell_text form_data_input" name="message" id="message" value="<?php echo $args['message'] ?? ''; ?>"></textarea>
+          <textarea class="input_cell_text form_data_input" name="message" id="message"><?php echo $args['message'] ?? ''; ?></textarea>
         </div>
       </div>
       <input type="submit" value=Отправить class="btn btn_submit" />
+      <p class="message_true_form"><?php echo $args['isDataCorrect']; ?></p>
     </form>
+    <div class="clear"></div>
     <p class="footer">© 2020 Петров Денис Пс-12. Поволжский государственный технологический университет, ФГБОУ ВО "ПГТУ"</p>
   </body>
 </html>

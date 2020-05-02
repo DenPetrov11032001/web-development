@@ -1,30 +1,31 @@
-<?php 
-    include("../utils/request.php");
-    include("../utils/template.php");
+<?php
 
-    function getDataFromFile(string $fileName): array
+    function feedbacksListPage()
     {
-        $fileStr = file_get_contents($fileName);
-        $fileDataArray = array();
-        $arrayPairs = explode(';', $fileStr);
-        foreach($arrayPairs as $str) 
+        function getDataFromFile(string $fileName): array
         {
-            list($key, $value) = explode('=>', $str);
-            $fileDataArray[$key] = $value;
+            $fileStr = file_get_contents($fileName);
+            $fileDataArray = array();
+            $arrayPairs = explode(';', $fileStr);
+            foreach($arrayPairs as $str)
+            {
+                list($key, $value) = explode('=>', $str);
+                $fileDataArray[$key] = $value;
+            }
+            return $fileDataArray;
         }
-        return $fileDataArray;
+
+        $email = $_GET['email'];
+        $fileDataArray = getDataFromFile('../src/data/' . $email . '.txt');
+
+        $name = $fileDataArray['name'];
+        $email = $fileDataArray['email'];
+        $country = $fileDataArray['country'];
+        $gender = $fileDataArray['gender'];
+        $message = $fileDataArray['message'];
+
+        renderTemplate('feedbacks.tpl.php', ['name' => "{$name}", 'email' => "{$email}",
+            'country' => "{$country}", 'gender' => "{$gender}",
+            'message' => "{$message}"]);
     }
-
-    $emailUser = $_GET['email'];
-    $fileDataArray = getDataFromFile('../data/' . $emailUser . '.txt');
-
-    $nameUser = $fileDataArray['name'];
-    $emailUser = $fileDataArray['email'];
-    $countryUser = $fileDataArray['country'];
-    $genderUser = $fileDataArray['gender'];
-    $messageUser = $fileDataArray['message'];
-
-    renderTemplate('feedbacks.tpl.php', ['name' => "{$nameUser}", 'email' => "{$emailUser}",
-                                                   'country' => "{$countryUser}", 'gender' => "{$genderUser}",
-                                                   'message' => "{$messageUser}"]);
 
