@@ -4,14 +4,14 @@ function checkData(email, name) {
   data.append("email", email);
   data.append("name", name);
 
-  let value = fetch("../src/utils/emailCheck.php", {
+  let value;
+  return value = fetch("../src/utils/emailCheck.php", {
     method: 'POST',
     body: data
   }).then(successResponse => successResponse.status === 200
-     ? successResponse.json()
-     : null
+    ? successResponse.json()
+    : null
   );
-  return Promise.resolve(value);
 }
 
 function dataFn(isValid, elementId) {
@@ -23,7 +23,6 @@ function dataFn(isValid, elementId) {
     cell.classList.remove('input_data_true');
     cell.classList.add('input_data_false');
   }
-  return null;
 }
 
 async function dataValidation() {
