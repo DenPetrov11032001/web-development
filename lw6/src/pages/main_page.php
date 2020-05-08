@@ -1,5 +1,5 @@
 <?php
-    function mainPage()
-    {
-        renderTemplate("main.tpl.php");
-    }
+function mainPage()
+{
+    renderTemplate("main.tpl.php");
+}

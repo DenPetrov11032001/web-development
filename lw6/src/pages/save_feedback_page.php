@@ -1,28 +1,22 @@
 <?php
 
-    function saveFeedbackPage()
+function saveFeedbackPage()
+{
+    $email = getParameter('email');
+    $fileName = '../src/data/' . $email . '.txt';
+    $name = getParameter('name');
+    $country = getParameter('country');
+    $gender = getParameter('gender');
+    $message = getParameter('message');
+    if ($name !== '' && $email !== '' && $message !== '')
     {
-        $email = getParameter('email');
-        $fileName = '../src/data/' . $email . '.txt';
-        $name = getParameter('name');
-        $country = getParameter('country');
-        $gender = getParameter('gender');
-        $message = getParameter('message');
-        if ($name !== '' && $email !== '' && $message !== '')
-        {
-            $isDataCorrect = 'Ваши данные приняты';
-        }
-        else
-        {
-            $isDataCorrect = 'Ваши данные не приняты';
-        }
-
+        $isDataCorrect = 'Ваши данные приняты';
         $isWriteInFile = false;
         foreach ($_POST as $key => $value)
         {
             if (($key == 'name') || ($key == 'country')
-            || ($key == 'email') || ($key == 'gender')
-            || ($key == 'message'))
+                || ($key == 'email') || ($key == 'gender')
+                || ($key == 'message'))
             {
                 if (!$isWriteInFile)
                 {
@@ -35,7 +29,13 @@
                 }
             }
         }
-        renderTemplate("main.tpl.php", ['name' => "{$name}", 'email' => "{$email}",
-            'country' => "{$country}", 'gender' => "{$gender}",
-            'message' => "{$message}", 'isDataCorrect' => "{$isDataCorrect}"]);
     }
+    else
+    {
+        $isDataCorrect = 'Ваши данные не приняты';
+    }
+
+    renderTemplate("main.tpl.php", ['name' => "{$name}", 'email' => "{$email}",
+        'country' => "{$country}", 'gender' => "{$gender}",
+        'message' => "{$message}", 'isDataCorrect' => "{$isDataCorrect}"]);
+}

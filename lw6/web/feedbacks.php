@@ -1,5 +1,5 @@
 <?php
-    include("../src/common.inc.php");
+include("../src/common.inc.php");
 
-    feedbacksListPage();
+feedbacksListPage();
 

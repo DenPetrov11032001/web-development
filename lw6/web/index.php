@@ -1,11 +1,11 @@
 <?php
-    include("../src/common.inc.php");
+include("../src/common.inc.php");
 
-    if (getFormMethod() === "POST")
-    {
-        saveFeedbackPage();
-    }
-    else
-    {
-        mainPage();
-    }
+if (getRequestMethod() === "POST")
+{
+    saveFeedbackPage();
+}
+else
+{
+    mainPage();
+}
