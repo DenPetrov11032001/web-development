@@ -10,30 +10,32 @@ WHERE
 SELECT
     *
 FROM
-    group_students
+    group_students as gs
 JOIN
     student
 WHERE
-    group_title = 1;
+    gs.id = 2;
 
 
 SELECT
     *
 FROM
-    faculty
+    faculty as f
 JOIN
-    group_stodents
+    group_students as gs
 JOIN
-    student
+    student as s
 WHERE
-    faculty.group_title = group_stodents.group_title AND group_stodents.group_title = 1;
+    f.group_id = gs.id AND gs.id = 1;
 
 
 SELECT
     *
 FROM
-    group_students
+    group_students as gs
 JOIN
-    faculty
+    faculty as f
+JOIN
+    student as s
 WHERE
-    group_students.student_id = student.id AND faculty.group_title = group_stodents.group_title;
+    gs.student_id = s.id AND f.group_id = gs.id;
