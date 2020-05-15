@@ -1,0 +1,228 @@
+body
+{
+    margin: auto;
+}
+
+.data_answer
+{
+    margin-left: 8px;
+    margin-top: 6px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+}
+
+.form
+{
+    margin: 50px auto auto auto;
+    width: 700px;
+}
+
+.form_line
+{
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin-left: 2px;
+    border: none;
+    background-color: #c4c4c4;
+    color: #c4c4c4;
+    height: 1px;
+    width: 200px;
+}
+
+.form_write_me
+{
+    display: inline-block;
+    margin: 46px 13px auto 13px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
+}
+
+.form_cell
+{
+    width: 540px;
+    margin: 0 auto;
+}
+
+.form_cell_name
+{
+    margin-top: 70px;
+}
+
+.form_topic
+{
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+}
+
+.form_data_input
+{
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+    padding-left: 10px;
+}
+
+.btn
+{
+    margin: 0 auto;
+    width: 220px;
+    height: 50px;
+    background-color: #15a98c;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+
+    font-size: 19px;
+    line-height: 44px;
+    color: #f5f5f5;
+    font-family: "Georgia", sans-serif;
+}
+
+.btn_submit
+{
+    margin-left: 80px;
+    margin-top: 46px;
+    text-align: center;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.input_cell_name
+{
+    margin-top: 2px;
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    width: 536px;
+    height: 44px;
+}
+
+.input_cell_name:hover
+{
+    border: 2px solid #15a98c;
+}
+
+.form_cell_email
+{
+    margin-top: 25px;
+}
+
+.input_cell_email
+{
+    margin-top: 2px;
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    width: 536px;
+    height: 44px;
+}
+
+.input_cell_email:hover
+{
+    border: 2px solid #15a98c;
+}
+
+
+.form_topic_not_main
+{
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+}
+
+.input_cell_where_from
+{
+    margin-top: 2px;
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    width: 540px;
+    height: 50px;
+}
+
+.input_cell_where_from:hover
+{
+    border: 2px solid #15a98c;
+
+}
+
+.form_cell_gender
+{
+    margin-top: 30px;
+}
+
+.form_topic_gender
+{
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+}
+
+.radio
+{
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+.radio_female
+{
+    margin-left: 40px;
+}
+
+.form_select_male
+{
+    margin-left: 3px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+}
+
+.form_select_female
+{
+    margin-left: 3px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.input_text
+{
+    margin-top: 34px;
+    margin-bottom: 100px;
+}
+
+.input_cell_text
+{
+    margin-top: 2px;
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    width: 536px;
+    height: 100%;
+}
+
+.input_cell_text:hover
+{
+    border: 2px solid #15a98c;
+}
+
+
+

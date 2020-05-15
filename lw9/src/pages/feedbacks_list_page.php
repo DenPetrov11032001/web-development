@@ -29,4 +29,3 @@
     $messageUser = $fileDataArray['message'];
 
     header("Location: /src/templates/feedbacks.tpl.php" . "?name={$nameUser}&email={$emailUser}&country={$countryUser}&gender={$genderUser}&message={$messageUser}");
-?>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/pages/save_feedback_page.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/schema/database.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/utils/database.php" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02c37121-6c5f-43a6-9cfd-c2c113b00359" name="Default Changelist" comment="" />
+    <list default="true" id="02c37121-6c5f-43a6-9cfd-c2c113b00359" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/pages/feedbacks_list_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/feedbacks_list_page.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -22,7 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lw11" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -45,6 +50,7 @@
       <workItem from="1588326361206" duration="29000" />
       <workItem from="1588422757489" duration="1228000" />
       <workItem from="1588433217026" duration="971000" />
+      <workItem from="1589534442997" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="ver1">
       <created>1587752037300</created>
@@ -134,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587838726314" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1588433236819">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589534510679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588433236819" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589534510679" />
     <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1588434011710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
