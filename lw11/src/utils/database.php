@@ -18,12 +18,10 @@ function hasUser(string $email): bool
         FROM
           users
         WHERE
-          email = :email
-    ", [
-        'email' => $email
-    ]);
+          email = {$email}
+    ");
 
-    return !empty($stmt->fetchAll(FetchMode::ASSOCIATIVE));
+    return empty($stmt->fetch());
 }
 
 function addUser(string $email, string $name, string $country, string $gender, string $message): void
@@ -32,31 +30,25 @@ function addUser(string $email, string $name, string $country, string $gender, s
         INSERT INTO 
           users
         SET
-          email = :email,
-          name = :name,
-          country = :country, 
-          gender = :gender,
-          message = :message
-    ", [
-        'email' => $email,
-        'name' => $name,
-        'country' => $country,
-        'gender' => $gender,
-        'message' => $message
-    ]);
+          email = {$email},
+          name = {$name},
+          country = {$country},
+          gender = {$gender},
+          message = {$message}
+    ");
 }
+
 
 function getUser(string $email): array
 {
     $stmt = database()->query("
-                SELECT 
-                  *
-                FROM
-                  users
-                WHERE
-                  email= {$email}    
-            ");
+        SELECT 
+          *
+        FROM
+          users
+        WHERE
+          email = {$email}    
+    ");
 
-
-    return $stmt->fetchAll(FetchMode::ASSOCIATIVE);
+    return $stmt->fetch();
 }

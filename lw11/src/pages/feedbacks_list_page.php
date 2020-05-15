@@ -3,7 +3,7 @@
 function feedbacksListPage()
 {
     $email = $_GET['email'];
-    $dataFromDatabase = getUser($email);
+    $dataFromDatabase = getUser(database()->quote($email));
 
     $name = $dataFromDatabase['name'];
     $email = $dataFromDatabase['email'];
@@ -11,8 +11,11 @@ function feedbacksListPage()
     $gender = $dataFromDatabase['gender'];
     $message = $dataFromDatabase['message'];
 
-    renderTemplate('feedbacks.tpl.php', ['name' => "{$name}", 'email' => "{$email}",
-        'country' => "{$country}", 'gender' => "{$gender}",
+    renderTemplate('feedbacks.tpl.php',
+        ['name' => "{$name}",
+        'email' => "{$email}",
+        'country' => "{$country}",
+        'gender' => "{$gender}",
         'message' => "{$message}"]);
 }
 

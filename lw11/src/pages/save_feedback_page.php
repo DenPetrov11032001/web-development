@@ -8,7 +8,7 @@ function saveFeedbackPage()
     $gender = getParameter('gender');
     $message = getParameter('message');
 
-    $hasUser = hasUser(database()->quote($name));
+    $hasUser = hasUser(database()->quote($email));
     if ($name !== '' && $email !== '' && $message !== '' && $hasUser)
     {
         $isDataCorrect = 'Ваши данные приняты';
@@ -25,7 +25,11 @@ function saveFeedbackPage()
         $isDataCorrect = 'Ваши данные не приняты';
     }
 
-    renderTemplate("main.tpl.php", ['name' => "{$name}", 'email' => "{$email}",
-        'country' => "{$country}", 'gender' => "{$gender}",
-        'message' => "{$message}", 'isDataCorrect' => "{$isDataCorrect}"]);
+    renderTemplate("main.tpl.php",
+        ['name' => "{$name}",
+        'email' => "{$email}",
+        'country' => "{$country}",
+        'gender' => "{$gender}",
+        'message' => "{$message}",
+        'isDataCorrect' => "{$isDataCorrect}"]);
 }
