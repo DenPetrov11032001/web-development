@@ -14,7 +14,7 @@ FROM
 JOIN
     student
 WHERE
-    gs.id = 2;
+    gs.group_id = 2;
 
 
 SELECT

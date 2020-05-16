@@ -15,6 +15,7 @@ CREATE TABLE group_students
     id            INT AUTO_INCREMENT NOT NULL,
     student_id    INT                NOT NULL,
     major         VARCHAR(255)       NOT NULL,
+    group_id      INT                NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (student_id) REFERENCES student (id)
 ) DEFAULT CHARACTER SET utf8mb4
