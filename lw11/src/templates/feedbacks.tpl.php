@@ -35,19 +35,15 @@
         <p class="form_topic_not_main">Откуда вы</p>
         <div class="input_cell_name">
           <p class="data_answer">
-            <?php  
-            if (isset($args['country']) == 'rus') echo 'Россия';
-            else echo 'USA';?>
+            <?php echo isset($args['country']) ? $args['country'] : 'None';?>
           </p>
         </div>
       </div>
       <div class="form_cell form_cell_gender">
         <p class="form_topic_gender">Ваш пол</p>
         <div class="input_cell_name">
-          <p class="data_answer">  
-            <?php  
-              if (isset($args['gender']) == 'male') echo 'Мужской';
-              else echo 'Женский';?>
+          <p class="data_answer">
+            <?php echo isset($args['gender']) ? $args['gender'] : 'None';?>
           </p>    
         </div>      
       </div>
