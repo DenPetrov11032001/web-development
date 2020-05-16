@@ -50,5 +50,14 @@ function getUser(string $email): array
           email = {$email}    
     ");
 
-    return $stmt->fetch();
+    $result = $stmt->fetch();
+
+    if (empty($result))
+    {
+        return [];
+    }
+    else
+    {
+        return $result;
+    }
 }
