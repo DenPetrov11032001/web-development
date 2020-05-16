@@ -38,4 +38,4 @@ JOIN
 JOIN
     faculty as f
 WHERE
-    s.id = 1;
+    s.id = 1 AND gs.id = s.group_id AND f.id = gs.faculty_id;
