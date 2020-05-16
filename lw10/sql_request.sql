@@ -3,39 +3,39 @@ SELECT
 FROM
     student
 WHERE
-    age > 19;
+    student.age > 19;
 
 
 
 SELECT
     *
 FROM
-    group_students as gs
-JOIN
     student
+JOIN
+    group_students
 WHERE
-    gs.group_id = 2;
+    student.group_id = 2;
 
 
 SELECT
     *
 FROM
-    faculty as f
+    student as s
 JOIN
     group_students as gs
 JOIN
-    student as s
+    faculty as f
 WHERE
-    f.group_id = gs.id AND gs.id = 1;
+    s.group_id = 1 AND gs.faculty_id = 1;
 
 
 SELECT
     *
 FROM
+    student as s
+JOIN
     group_students as gs
 JOIN
     faculty as f
-JOIN
-    student as s
 WHERE
-    gs.student_id = 5 AND f.group_id = gs.id;
+    s.id = 1;
