@@ -38,4 +38,4 @@ JOIN
 JOIN
     student as s
 WHERE
-    gs.student_id = s.id AND f.group_id = gs.id;
+    gs.student_id = 5 AND f.group_id = gs.id;
