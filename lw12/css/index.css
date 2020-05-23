@@ -299,7 +299,6 @@ blockquote
     order: 2;
     max-width: 330px;
     margin-left: 20px;
-
 }
 
 .topic_head
@@ -553,7 +552,7 @@ h1
 .card
 {
     margin: auto;
-    max-width: 285px;
+    max-width: 100%;
     display: inline-block;
     vertical-align: middle;
 }
